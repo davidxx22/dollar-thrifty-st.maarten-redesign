@@ -107,3 +107,11 @@ html{scroll-padding-top:120px}
 @media(min-width:1600px){.ground{inset:270px 0 0}}
 @media(max-width:850px){.ground{inset:205px 0 0}}
 @media(max-width:560px){.ground{inset:145px 0 0}}
+
+/* Preserve the original homepage rental promotion with clear booking qualification. */
+.rental-offer{display:flex;align-items:center;gap:20px;margin:28px auto 0;padding:22px 26px;border:1px solid #dce7eb;border-radius:6px;background:#f5f9fb}
+.offer-calendar{display:grid;place-items:center;flex-shrink:0;width:52px;height:52px;border-radius:5px;background:var(--blue);color:white}
+.rental-offer strong{display:block;font-size:19px;font-weight:600;line-height:1.5}
+.rental-offer p{font-size:14px;line-height:1.7;margin:5px 0 0;color:#58636a}
+.rental-offer .textlink{margin-left:auto;flex-shrink:0;color:var(--blue);border-color:var(--blue)}
+@media(max-width:560px){.rental-offer{gap:14px;padding:20px;align-items:flex-start;flex-wrap:wrap}.rental-offer>div{flex:1;min-width:0}.rental-offer strong{font-size:18px}.rental-offer .textlink{margin-left:66px}.offer-calendar{width:44px;height:44px}}
