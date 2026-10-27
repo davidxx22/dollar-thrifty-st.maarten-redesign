@@ -123,4 +123,8 @@ html{scroll-padding-top:120px}
 @media(max-width:420px){.benefits-grid{grid-template-columns:1fr;gap:36px}.benefit-icon{width:104px;height:104px;margin-bottom:20px}.benefit-card{max-width:330px}.benefit-card h3{font-size:18px;margin-bottom:10px}.benefit-card p{font-size:16px}}
 
 /* Reserve a white strip for the scroll pill while it overlaps the blue edge. */
-@media(min-width:851px){.hero>main{display:flex;flex-direction:column;min-height:calc(100svh - 135px)}.hero-copy,.hero .booking-shell,.hero-stage{flex-shrink:0}.hero-stage{margin-top:auto;width:100%}}
+@media(min-width:851px){.hero>main{display:flex;flex-direction:column;min-height:calc(100svh - 153px)}.hero-copy,.hero .booking-shell,.hero-stage{flex-shrink:0}.hero-stage{margin-top:auto;width:100%}}
+
+/* Larger scroll pill and white surround, matching the supplied size reference. */
+.scroll-indicator{width:68px;height:96px;border-width:10px;border-radius:48px;margin:-48px auto 0;font-size:30px;line-height:1}
+@media(max-width:560px){.scroll-indicator{width:56px;height:82px;border-width:8px;border-radius:42px;margin-top:-41px;font-size:26px}}
