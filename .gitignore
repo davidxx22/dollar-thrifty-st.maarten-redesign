@@ -1,0 +1,8 @@
+audit/
+*.tar.gz
+*.zip
+.vercel/
+node_modules/
+.env*
+__pycache__/
+outputs/
