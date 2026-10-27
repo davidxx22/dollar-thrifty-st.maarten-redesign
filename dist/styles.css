@@ -46,14 +46,3 @@ p,.section-head p,.split-copy p,.location-feature p,.how-grid p,.page-title p,.p
 .booking-extras .field{gap:12px}.booking-extras .field label{flex-shrink:0}
 @media(min-width:1200px){.booking-grid{grid-template-columns:minmax(140px,1fr) minmax(250px,1.4fr) minmax(140px,1fr) minmax(250px,1.4fr) 180px;gap:12px}.booking-grid>.field{border-right:1px solid var(--line);padding-right:12px}.booking-grid>.field:nth-child(4){border-right:0;padding-right:0}.booking-grid .btn{grid-column:auto;justify-self:end}.booking-extras .field{flex:0 1 auto}}
 @media(max-width:560px){.booking-grid{grid-template-columns:minmax(0,1fr);gap:16px}.booking-panel{padding:20px 18px}.date-pair{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}.booking-grid .btn{justify-self:center}.booking-extras{gap:14px}.btn,.header-actions .btn,.booking-grid .btn,.card-bottom button{padding:6px 14px;font-size:15px;line-height:1.2}}
-
-/* Two rows of three booking fields, matching the requested arrangement. */
-.booking-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 24px;align-items:start}
-.booking-grid>.field,.booking-grid>.field:nth-child(4){padding:0;border:0;gap:8px}
-.booking-grid>.field>select{height:48px;padding:8px 12px;border:1px solid var(--line);border-radius:4px;background:white}
-.booking-grid .date-pair{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:0;height:48px;border:1px solid var(--line);border-radius:4px;background:white;overflow:hidden}
-.booking-grid .date-pair input,.booking-grid .date-pair select{height:46px;min-height:46px;padding:8px 10px;border:0;border-radius:0;font-size:16px;min-width:0;width:100%}
-.booking-grid .date-pair select{border-left:1px solid var(--line)}
-.booking-actions{display:flex;justify-content:flex-end;margin-top:20px;padding-top:18px;border-top:1px solid #eee}
-@media(max-width:999px){.booking-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
-@media(max-width:650px){.booking-grid{grid-template-columns:minmax(0,1fr)}.booking-actions{justify-content:center}.booking-grid .field label{white-space:normal}}
