@@ -128,3 +128,8 @@ html{scroll-padding-top:120px}
 /* Larger scroll pill and white surround, matching the supplied size reference. */
 .scroll-indicator{width:68px;height:96px;border-width:10px;border-radius:48px;margin:-48px auto 0;font-size:30px;line-height:1}
 @media(max-width:560px){.scroll-indicator{width:56px;height:82px;border-width:8px;border-radius:42px;margin-top:-41px;font-size:26px}}
+
+/* Compact benefit icons while preserving the readable card text. */
+.benefit-icon{width:88px;height:88px;border-radius:16px;margin-bottom:20px}
+.benefit-icon svg{width:40px;height:40px}
+@media(max-width:700px){.benefit-icon{width:80px;height:80px;border-radius:14px}.benefit-icon svg{width:36px;height:36px}}
