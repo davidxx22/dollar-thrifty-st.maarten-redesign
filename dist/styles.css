@@ -154,3 +154,9 @@ html{scroll-padding-top:120px}
 .vehicle-card .car-rate-copy small{display:block;font-size:13px;line-height:1.5;color:#69716c;margin-top:2px}
 .vehicle-card .card-bottom button{width:110px;height:48px;min-height:48px;max-width:100%;font-size:14px;padding:6px 12px;border-radius:6px;flex-shrink:0}
 @media(max-width:560px){.vehicle-card .car-body{padding:20px}.vehicle-card .car-model{min-height:0}.vehicle-card .specs{font-size:16px;gap:12px}.vehicle-card .card-bottom{padding:16px 20px}.vehicle-card .card-bottom button{width:130px}}
+
+/* Shared page edges align the navbar, booking panel and main section content. */
+:root{--page-content-width:min(1240px,92%)}
+.wrap,.booking-shell{width:var(--page-content-width);margin-left:auto;margin-right:auto}
+@media(min-width:1500px){:root{--page-content-width:min(1680px,94%)}}
+@media(max-width:850px){:root{--page-content-width:88%}}
