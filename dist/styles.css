@@ -133,3 +133,7 @@ html{scroll-padding-top:120px}
 .benefit-icon{width:64px;height:64px;border-radius:12px;margin-bottom:18px}
 .benefit-icon svg{width:30px;height:30px}
 @media(max-width:700px){.benefit-icon{width:56px;height:56px;border-radius:10px}.benefit-icon svg{width:26px;height:26px}}
+
+/* Four featured vehicle cards on desktop, with comfortable smaller-screen wrapping. */
+@media(min-width:1101px){#featured-cars{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(min-width:561px) and (max-width:1100px){#featured-cars{grid-template-columns:repeat(2,minmax(0,1fr))}}
