@@ -101,3 +101,9 @@ html{scroll-padding-top:120px}
 /* Slightly enlarge the hero vehicle to balance the headline and booking panel. */
 @media(min-width:851px){.hero-car{width:min(1040px,84vw)}}
 @media(min-width:1600px){.hero-car{width:1150px}}
+
+/* A shallower accent band meets the car near the wheels, as in the reference. */
+.ground{inset:230px 0 0}
+@media(min-width:1600px){.ground{inset:270px 0 0}}
+@media(max-width:850px){.ground{inset:205px 0 0}}
+@media(max-width:560px){.ground{inset:145px 0 0}}
