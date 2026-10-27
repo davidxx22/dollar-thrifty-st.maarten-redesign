@@ -122,5 +122,5 @@ html{scroll-padding-top:120px}
 @media(max-width:700px){.why-choose{padding-top:65px;padding-bottom:20px}.benefits-heading{grid-template-columns:1fr;gap:22px;margin-bottom:38px}.benefits-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 24px}.benefit-icon{width:104px;height:104px;border-radius:18px;margin-bottom:20px}.benefit-icon svg{width:46px;height:46px}.benefit-card p{font-size:16px}}
 @media(max-width:420px){.benefits-grid{grid-template-columns:1fr;gap:36px}.benefit-icon{width:104px;height:104px;margin-bottom:20px}.benefit-card{max-width:330px}.benefit-card h3{font-size:18px;margin-bottom:10px}.benefit-card p{font-size:16px}}
 
-/* Let the vehicle and its band settle at the bottom of the first desktop screen. */
-@media(min-width:851px){.hero>main{display:flex;flex-direction:column;min-height:calc(100svh - 100px)}.hero-copy,.hero .booking-shell,.hero-stage{flex-shrink:0}.hero-stage{margin-top:auto;width:100%}}
+/* Reserve a white strip for the scroll pill while it overlaps the blue edge. */
+@media(min-width:851px){.hero>main{display:flex;flex-direction:column;min-height:calc(100svh - 135px)}.hero-copy,.hero .booking-shell,.hero-stage{flex-shrink:0}.hero-stage{margin-top:auto;width:100%}}
