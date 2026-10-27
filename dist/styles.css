@@ -94,3 +94,6 @@ html{scroll-padding-top:120px}
 @media(max-width:1050px){.sticky-nav .nav{top:100%;max-height:calc(100dvh - 110px);overflow-y:auto}}
 @media(max-width:560px){html{scroll-padding-top:108px}}
 
+/* Give the booking text and fields more breathing room without changing their layout. */
+.booking-tabs,.booking-grid .field label,.booking-grid input,.booking-grid select,.booking-grid .time-trigger{letter-spacing:0}
+@media(min-width:1500px){.booking-shell{width:min(1680px,94%)}.booking-panel{padding:26px 24px}.booking-grid{gap:18px}.booking-grid>.field{gap:10px}.booking-grid>.btn{align-self:center}}
