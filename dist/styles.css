@@ -224,7 +224,7 @@ html{scroll-padding-top:120px}
 .why-choose{padding-top:80px;padding-bottom:80px}
 .why-choose .benefits-heading{text-align:left;margin-bottom:40px}
 .benefits-grid.company-statements{gap:24px}
-.company-statements .benefit-card{--benefit-tint:#edf6fb;--benefit-edge:#cce3f0;--benefit-accent:var(--blue);max-width:none;min-height:300px;padding:38px 30px 34px;text-align:center;background:var(--benefit-tint);border:1px solid var(--benefit-edge);border-radius:18px;box-shadow:0 3px 0 color-mix(in srgb,var(--benefit-edge) 55%,transparent)}
+.company-statements .benefit-card{--benefit-tint:#fceff1;--benefit-edge:#efd3d8;--benefit-accent:var(--red);max-width:none;min-height:300px;padding:38px 30px 34px;text-align:center;background:var(--benefit-tint);border:1px solid var(--benefit-edge);border-radius:18px;box-shadow:0 3px 0 color-mix(in srgb,var(--benefit-edge) 55%,transparent)}
 .company-statements .benefit-icon,.company-statements .benefit-icon.dark{display:grid;width:64px;height:64px;border-radius:50%;margin:0 auto 24px;background:white;color:var(--benefit-accent);box-shadow:0 3px 12px #17222c06}
 .company-statements .benefit-icon svg{width:29px;height:29px}
 .company-statements .benefit-card h3{font-size:18px;font-weight:600;line-height:1.45;min-height:0;margin:0 0 12px;letter-spacing:-.015em}
@@ -271,3 +271,7 @@ html{scroll-padding-top:120px}
 .journey-step:nth-child(2) .step-connector::after{background:var(--blue)}
 @media(max-width:900px){.how-grid.journey-steps{gap:28px}.step-connector{width:calc(100% - 88px)}.journey-steps .journey-step h3{font-size:18px}.journey-steps .journey-step p{font-size:15px}}
 @media(max-width:700px){.how-grid.journey-steps{grid-template-columns:1fr;gap:44px;margin-top:36px}.step-connector{display:none}.step-icon{width:64px;height:64px;border-radius:16px;margin-bottom:22px}.step-icon svg{width:28px;height:28px}.journey-steps .journey-step p{font-size:16px;max-width:360px}}
+
+/* Pale versions of the red, blue and green in the company logo. */
+.company-statements .benefit-card:nth-child(2){--benefit-tint:#edf6fb;--benefit-edge:#cce3f0;--benefit-accent:var(--blue)}
+.company-statements .benefit-card:nth-child(3){--benefit-tint:#f0f7ed;--benefit-edge:#d4e5cd;--benefit-accent:#4b883e}
