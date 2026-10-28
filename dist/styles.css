@@ -280,3 +280,6 @@ html{scroll-padding-top:120px}
 .fleet-more{display:flex;justify-content:center;margin-top:34px}
 .fleet-more:empty{display:none}
 .fleet-more .btn{width:max-content;min-width:180px;padding-left:24px;padding-right:24px}
+
+.fleet-more .btn.outline{border-color:var(--blue);color:var(--blue);background:transparent}
+.fleet-more .btn.outline:hover{background:var(--blue);color:white}
