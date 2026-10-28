@@ -255,3 +255,5 @@ html{scroll-padding-top:120px}
 /* Secondary location action uses the shared button height and brand-blue outline. */
 .btn.outline.location-action{width:max-content;min-width:180px;max-width:100%;height:48px;min-height:48px;padding:6px 20px;border:1px solid var(--blue);color:var(--blue);background:transparent;text-decoration:none}
 .btn.outline.location-action:hover{background:var(--blue);color:white}
+
+.location-feature .location-action{margin-top:14px}
