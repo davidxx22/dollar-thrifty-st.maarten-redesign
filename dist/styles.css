@@ -275,3 +275,8 @@ html{scroll-padding-top:120px}
 /* Pale versions of the red, blue and green in the company logo. */
 .company-statements .benefit-card:nth-child(2){--benefit-tint:#edf6fb;--benefit-edge:#cce3f0;--benefit-accent:var(--blue)}
 .company-statements .benefit-card:nth-child(3){--benefit-tint:#f0f7ed;--benefit-edge:#d4e5cd;--benefit-accent:#4b883e}
+
+/* Continue browsing the selected vehicle category in the full catalogue. */
+.fleet-more{display:flex;justify-content:center;margin-top:34px}
+.fleet-more:empty{display:none}
+.fleet-more .btn{width:max-content;min-width:180px;padding-left:24px;padding-right:24px}
