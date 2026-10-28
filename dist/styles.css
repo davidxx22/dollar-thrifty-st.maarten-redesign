@@ -325,3 +325,6 @@ body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-t
 .person .person-photo img{border-radius:0;transition:transform .35s ease}
 @media(hover:hover){.person:hover .person-photo img{transform:scale(1.035)}}
 @media(prefers-reduced-motion:reduce){.person .person-photo img{transition:none;transform:none}}
+
+.team-heading{margin-top:100px}
+@media(max-width:560px){.team-heading{margin-top:72px}}
