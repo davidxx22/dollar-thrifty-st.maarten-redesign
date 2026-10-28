@@ -319,3 +319,9 @@ body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-t
 /* Keep these three introductory gray bands equal in overall height. */
 body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-top{min-height:360px}
 @media(max-width:560px){body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-top{min-height:350px}}
+
+/* A restrained portrait zoom, contained within each team photograph. */
+.person-photo{overflow:hidden;border-radius:4px}
+.person .person-photo img{border-radius:0;transition:transform .35s ease}
+@media(hover:hover){.person:hover .person-photo img{transform:scale(1.035)}}
+@media(prefers-reduced-motion:reduce){.person .person-photo img{transition:none;transform:none}}
