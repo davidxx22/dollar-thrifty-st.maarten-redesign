@@ -197,5 +197,6 @@ html{scroll-padding-top:120px}
 @media(min-width:561px) and (max-width:1199px){#fleet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* A soft contact shadow on the ground beneath each vehicle, rather than its outline. */
-.vehicle-card .car-picture{isolation:isolate}
-.vehicle-card .car-picture::after{content:'';position:absolute;z-index:0;left:13%;right:13%;bottom:8px;height:14px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(20,26,29,.28) 0%,rgba(20,26,29,.16) 32%,rgba(20,26,29,.06) 56%,transparent 74%);filter:blur(3px);pointer-events:none}
+.vehicle-card .car-picture{isolation:isolate;--picture-aspect:1.935483871}
+.vehicle-card .car-picture::after{content:'';position:absolute;z-index:0;left:12%;right:12%;bottom:calc(13px + min(calc(var(--ground-w,0%) * var(--picture-aspect) - var(--ground-w-pad,0px)),calc(var(--ground-h,0%) - var(--ground-h-pad,0px))));height:6px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(20,26,29,.22) 0%,rgba(20,26,29,.12) 38%,rgba(20,26,29,.04) 62%,transparent 78%);filter:blur(1.2px);pointer-events:none}
+@media(max-width:560px){.vehicle-card .car-picture{--picture-aspect:2}}

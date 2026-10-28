@@ -18,6 +18,10 @@
       "publishedRate": {
         "day": 50.0,
         "week": 290.0
+      },
+      "cardGround": {
+        "width": 0.0325,
+        "height": 0.081761
       }
     },
     {
@@ -38,6 +42,10 @@
       "publishedRate": {
         "day": 50.0,
         "week": 290.0
+      },
+      "cardGround": {
+        "width": 0.0375,
+        "height": 0.09
       }
     },
     {
@@ -58,6 +66,10 @@
       "publishedRate": {
         "day": 45.0,
         "week": 250.0
+      },
+      "cardGround": {
+        "width": 0.0158333,
+        "height": 0.0395833
       }
     },
     {
@@ -78,6 +90,10 @@
       "publishedRate": {
         "day": 50.0,
         "week": 280.0
+      },
+      "cardGround": {
+        "width": 0.0275,
+        "height": 0.0642023
       }
     },
     {
@@ -98,6 +114,10 @@
       "publishedRate": {
         "day": 40.0,
         "week": 240.0
+      },
+      "cardGround": {
+        "width": 0.0291667,
+        "height": 0.065666
       }
     },
     {
@@ -118,6 +138,10 @@
       "publishedRate": {
         "day": 50.0,
         "week": 290.0
+      },
+      "cardGround": {
+        "width": 0.0266667,
+        "height": 0.0661157
       }
     },
     {
@@ -138,6 +162,10 @@
       "publishedRate": {
         "day": 150.0,
         "week": 850.0
+      },
+      "cardGround": {
+        "width": 0.03,
+        "height": 0.0765957
       }
     },
     {
@@ -158,6 +186,10 @@
       "publishedRate": {
         "day": 60.0,
         "week": 420.0
+      },
+      "cardGround": {
+        "width": 0.0358333,
+        "height": 0.0895833
       }
     },
     {
@@ -178,6 +210,10 @@
       "publishedRate": {
         "day": 70.0,
         "week": 450.0
+      },
+      "cardGround": {
+        "width": 0.0775,
+        "height": 0.155
       }
     },
     {
@@ -198,6 +234,10 @@
       "publishedRate": {
         "day": 70.0,
         "week": 450.0
+      },
+      "cardGround": {
+        "width": 0.0216667,
+        "height": 0.058296
       }
     },
     {
@@ -218,6 +258,10 @@
       "publishedRate": {
         "day": 70.0,
         "week": 450.0
+      },
+      "cardGround": {
+        "width": 0.0366667,
+        "height": 0.0934183
       }
     },
     {
@@ -238,6 +282,10 @@
       "publishedRate": {
         "day": 160.0,
         "week": 870.0
+      },
+      "cardGround": {
+        "width": 0.0083333,
+        "height": 0.0210526
       }
     },
     {
@@ -258,6 +306,10 @@
       "publishedRate": {
         "day": 160.0,
         "week": 870.0
+      },
+      "cardGround": {
+        "width": 0.035,
+        "height": 0.0923077
       }
     },
     {
@@ -278,6 +330,10 @@
       "publishedRate": {
         "day": 60.0,
         "week": 450.0
+      },
+      "cardGround": {
+        "width": 0.0175,
+        "height": 0.0393996
       }
     },
     {
@@ -298,6 +354,10 @@
       "publishedRate": {
         "day": 95.0,
         "week": 650.0
+      },
+      "cardGround": {
+        "width": 0.0291667,
+        "height": 0.07
       }
     },
     {
@@ -318,6 +378,10 @@
       "publishedRate": {
         "day": 95.0,
         "week": 650.0
+      },
+      "cardGround": {
+        "width": 0.0291667,
+        "height": 0.0671785
       }
     },
     {
@@ -338,6 +402,10 @@
       "publishedRate": {
         "day": 150.0,
         "week": 800.0
+      },
+      "cardGround": {
+        "width": 0.0516667,
+        "height": 0.1109123
       }
     },
     {
@@ -358,6 +426,10 @@
       "publishedRate": {
         "day": 125.0,
         "week": 750.0
+      },
+      "cardGround": {
+        "width": 0.0183333,
+        "height": 0.0429688
       }
     },
     {
@@ -378,6 +450,10 @@
       "publishedRate": {
         "day": 190.0,
         "week": 1095.0
+      },
+      "cardGround": {
+        "width": 0.02,
+        "height": 0.05
       }
     },
     {
@@ -398,6 +474,10 @@
       "publishedRate": {
         "day": 198.0,
         "week": 1195.0
+      },
+      "cardGround": {
+        "width": 0.02,
+        "height": 0.05
       }
     },
     {
@@ -418,6 +498,10 @@
       "publishedRate": {
         "day": 185.0,
         "week": 950.0
+      },
+      "cardGround": {
+        "width": 0.0375,
+        "height": 0.0884086
       }
     },
     {
@@ -438,6 +522,10 @@
       "publishedRate": {
         "day": 180.0,
         "week": 900.0
+      },
+      "cardGround": {
+        "width": 0.0275,
+        "height": 0.066
       }
     },
     {
@@ -458,6 +546,10 @@
       "publishedRate": {
         "day": 150.0,
         "week": 850.0
+      },
+      "cardGround": {
+        "width": 0.0216667,
+        "height": 0.0552017
       }
     },
     {
@@ -478,6 +570,10 @@
       "publishedRate": {
         "day": 160.0,
         "week": 950.0
+      },
+      "cardGround": {
+        "width": 0.0241667,
+        "height": 0.0556622
       }
     },
     {
@@ -498,6 +594,10 @@
       "publishedRate": {
         "day": 60.0,
         "week": 420.0
+      },
+      "cardGround": {
+        "width": 0.0441667,
+        "height": 0.1033138
       }
     },
     {
@@ -518,6 +618,10 @@
       "publishedRate": {
         "day": 160.0,
         "week": 850.0
+      },
+      "cardGround": {
+        "width": 0.0325,
+        "height": 0.0731707
       }
     },
     {
@@ -538,6 +642,10 @@
       "publishedRate": {
         "day": 108.0,
         "week": 745.0
+      },
+      "cardGround": {
+        "width": 0.0325,
+        "height": 0.0745698
       }
     },
     {
@@ -558,6 +666,10 @@
       "publishedRate": {
         "day": 198.0,
         "week": 1195.0
+      },
+      "cardGround": {
+        "width": 0.0341667,
+        "height": 0.0763501
       }
     },
     {
@@ -578,6 +690,10 @@
       "publishedRate": {
         "day": 70.0,
         "week": 450.0
+      },
+      "cardGround": {
+        "width": 0.0408333,
+        "height": 0.1049251
       }
     },
     {
@@ -598,6 +714,10 @@
       "publishedRate": {
         "day": 100.0,
         "week": 700.0
+      },
+      "cardGround": {
+        "width": 0.0125,
+        "height": 0.03125
       }
     },
     {
@@ -618,6 +738,10 @@
       "publishedRate": {
         "day": 150.0,
         "week": 850.0
+      },
+      "cardGround": {
+        "width": 0.0216667,
+        "height": 0.0555556
       }
     },
     {
@@ -638,6 +762,10 @@
       "publishedRate": {
         "day": 160.0,
         "week": 870.0
+      },
+      "cardGround": {
+        "width": 0.005,
+        "height": 0.0136986
       }
     },
     {
@@ -658,6 +786,10 @@
       "publishedRate": {
         "day": 195.0,
         "week": 1075.0
+      },
+      "cardGround": {
+        "width": 0.0091667,
+        "height": 0.022869
       }
     },
     {
@@ -678,6 +810,10 @@
       "publishedRate": {
         "day": 95.0,
         "week": 650.0
+      },
+      "cardGround": {
+        "width": 0.0208333,
+        "height": 0.05
       }
     },
     {
@@ -698,6 +834,10 @@
       "publishedRate": {
         "day": 34.0,
         "week": 225.0
+      },
+      "cardGround": {
+        "width": 0.0158333,
+        "height": 0.0376984
       }
     },
     {
@@ -718,6 +858,10 @@
       "publishedRate": {
         "day": 75.0,
         "week": 550.0
+      },
+      "cardGround": {
+        "width": 0.0558333,
+        "height": 0.1116667
       }
     },
     {
@@ -738,6 +882,10 @@
       "publishedRate": {
         "day": 95.0,
         "week": 650.0
+      },
+      "cardGround": {
+        "width": 0.03,
+        "height": 0.0703125
       }
     },
     {
@@ -758,6 +906,10 @@
       "publishedRate": {
         "day": 55.0,
         "week": 320.0
+      },
+      "cardGround": {
+        "width": 0.0416667,
+        "height": 0.0925926
       }
     },
     {
@@ -778,6 +930,10 @@
       "publishedRate": {
         "day": 150.0,
         "week": 850.0
+      },
+      "cardGround": {
+        "width": 0.0208333,
+        "height": 0.0524109
       }
     },
     {
@@ -798,6 +954,10 @@
       "publishedRate": {
         "day": 160.0,
         "week": 870.0
+      },
+      "cardGround": {
+        "width": 0.0425,
+        "height": 0.085
       }
     },
     {
@@ -818,6 +978,10 @@
       "publishedRate": {
         "day": 130.0,
         "week": 800.0
+      },
+      "cardGround": {
+        "width": 0.0258333,
+        "height": 0.062
       }
     },
     {
@@ -838,6 +1002,10 @@
       "publishedRate": {
         "day": 70.0,
         "week": 450.0
+      },
+      "cardGround": {
+        "width": 0.0366667,
+        "height": 0.0916667
       }
     },
     {
@@ -858,6 +1026,10 @@
       "publishedRate": {
         "day": 95.0,
         "week": 650.0
+      },
+      "cardGround": {
+        "width": 0.0375,
+        "height": 0.0850662
       }
     },
     {
@@ -878,6 +1050,10 @@
       "publishedRate": {
         "day": 65.0,
         "week": 450.0
+      },
+      "cardGround": {
+        "width": 0.04,
+        "height": 0.08
       }
     },
     {
@@ -898,6 +1074,10 @@
       "publishedRate": {
         "day": 95.0,
         "week": 650.0
+      },
+      "cardGround": {
+        "width": 0.0125,
+        "height": 0.0319829
       }
     },
     {
@@ -918,6 +1098,10 @@
       "publishedRate": {
         "day": 150.0,
         "week": 850.0
+      },
+      "cardGround": {
+        "width": 0.0175,
+        "height": 0.0416667
       }
     },
     {
@@ -938,6 +1122,10 @@
       "publishedRate": {
         "day": 130.0,
         "week": 800.0
+      },
+      "cardGround": {
+        "width": 0.0258333,
+        "height": 0.0625
       }
     },
     {
@@ -958,6 +1146,10 @@
       "publishedRate": {
         "day": 95.0,
         "week": 650.0
+      },
+      "cardGround": {
+        "width": 0.0366667,
+        "height": 0.0859375
       }
     },
     {
@@ -978,6 +1170,10 @@
       "publishedRate": {
         "day": 150.0,
         "week": 850.0
+      },
+      "cardGround": {
+        "width": 0.0216667,
+        "height": 0.0524194
       }
     },
     {
@@ -998,6 +1194,10 @@
       "publishedRate": {
         "day": 95.0,
         "week": 650.0
+      },
+      "cardGround": {
+        "width": 0.0375,
+        "height": 0.0868726
       }
     },
     {
@@ -1018,6 +1218,10 @@
       "publishedRate": {
         "day": 130.0,
         "week": 800.0
+      },
+      "cardGround": {
+        "width": 0.0333333,
+        "height": 0.0779727
       }
     },
     {
@@ -1038,6 +1242,10 @@
       "publishedRate": {
         "day": 100.0,
         "week": 700.0
+      },
+      "cardGround": {
+        "width": 0.0275,
+        "height": 0.0619137
       }
     },
     {
@@ -1058,6 +1266,10 @@
       "publishedRate": {
         "day": 60.0,
         "week": 320.0
+      },
+      "cardGround": {
+        "width": 0.0216667,
+        "height": 0.0534979
       }
     },
     {
@@ -1078,6 +1290,10 @@
       "publishedRate": {
         "day": 180.0,
         "week": 1000.0
+      },
+      "cardGround": {
+        "width": 0.0216667,
+        "height": 0.052
       }
     }
   ],
