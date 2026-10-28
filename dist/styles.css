@@ -222,7 +222,7 @@ html{scroll-padding-top:120px}
 
 /* Centered pastel benefit cards, following the supplied composition. */
 .why-choose{padding-top:80px;padding-bottom:80px}
-.why-choose .benefits-heading{text-align:center;margin-bottom:40px}
+.why-choose .benefits-heading{text-align:left;margin-bottom:40px}
 .why-choose .benefits-heading h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(30px,3vw,42px);font-weight:600;line-height:1.25;letter-spacing:-.035em;text-transform:none}
 .benefits-grid.company-statements{gap:24px}
 .company-statements .benefit-card{--benefit-tint:#f1edfc;--benefit-edge:#d6cbef;--benefit-accent:#7543b5;max-width:none;min-height:300px;padding:38px 30px 34px;text-align:center;background:var(--benefit-tint);border:1px solid var(--benefit-edge);border-radius:18px;box-shadow:0 3px 0 color-mix(in srgb,var(--benefit-edge) 55%,transparent)}
