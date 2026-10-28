@@ -237,12 +237,12 @@ html{scroll-padding-top:120px}
 .company-numbers{padding-top:74px;padding-bottom:8px}
 .numbers-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin:0;text-align:center}
 .numbers-grid>div{display:flex;flex-direction:column;align-items:center;gap:8px}
-.numbers-grid dt{order:2;font-size:14px;line-height:1.6;font-weight:400;color:var(--muted);max-width:none}
-.numbers-grid dd{order:1;display:flex;align-items:baseline;gap:5px;font-family:'Poppins',Arial,sans-serif;font-size:clamp(30px,3vw,42px);font-weight:600;line-height:1.15;letter-spacing:-.035em;margin:0}
-.numbers-grid dd span{font-size:23px;color:inherit;font-weight:500}
+.numbers-grid dt{order:2;font-size:16px;line-height:1.6;font-weight:400;color:var(--muted);max-width:none}
+.numbers-grid dd{order:1;display:flex;align-items:baseline;gap:5px;font-family:'Poppins',Arial,sans-serif;font-size:clamp(34px,3.4vw,48px);font-weight:600;line-height:1.15;letter-spacing:-.035em;margin:0}
+.numbers-grid dd span{font-size:27px;color:inherit;font-weight:500}
 .numbers-source{font-size:12px;line-height:1.6;text-align:center;margin:24px 0 0;color:#727973;letter-spacing:0}
 .numbers-source a{text-decoration:underline;text-underline-offset:3px}
-@media(max-width:700px){.numbers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}.company-numbers{padding-top:65px}.numbers-grid dt{font-size:13px}.numbers-source{max-width:440px;margin:24px auto 0}}
+@media(max-width:700px){.numbers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}.company-numbers{padding-top:65px}.numbers-grid dt{font-size:14px}.numbers-source{max-width:440px;margin:24px auto 0}}
 
 .numbers-grid>div:first-child dt{white-space:nowrap}
 @media(max-width:1100px){.numbers-grid>div:first-child{grid-column:1/-1}.numbers-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
