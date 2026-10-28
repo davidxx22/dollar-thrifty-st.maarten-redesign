@@ -314,3 +314,5 @@ body:is([data-page="fleet"],[data-page="locations"]) .page-top{padding-bottom:30
 body:is([data-page="fleet"],[data-page="locations"]) .page-title{padding-top:32px;padding-bottom:0}
 body:is([data-page="fleet"],[data-page="locations"]) .page-title p{margin-bottom:0}
 @media(max-width:560px){body:is([data-page="fleet"],[data-page="locations"]) .page-title{padding-top:24px}body:is([data-page="fleet"],[data-page="locations"]) .page-top{padding-bottom:26px}}
+
+.location-body .location-action{margin-top:14px}
