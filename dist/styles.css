@@ -310,9 +310,9 @@ html{scroll-padding-top:120px}
 @media(max-width:700px){.fleet-toolbar{gap:20px}.fleet-toolbar .fleet-tools{width:100%;margin:0}.fleet-toolbar #fleet-search{flex:1;width:0;min-width:0}.fleet-filter-panel{width:280px}.fleet-toolbar .category-tabs{gap:8px}}
 
 /* Compact fleet introduction without changing other page headers. */
-body:is([data-page="fleet"],[data-page="locations"]) .page-top{padding-bottom:30px}
-body:is([data-page="fleet"],[data-page="locations"]) .page-title{padding-top:32px;padding-bottom:0}
-body:is([data-page="fleet"],[data-page="locations"]) .page-title p{margin-bottom:0}
-@media(max-width:560px){body:is([data-page="fleet"],[data-page="locations"]) .page-title{padding-top:24px}body:is([data-page="fleet"],[data-page="locations"]) .page-top{padding-bottom:26px}}
+body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-top{padding-bottom:30px}
+body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-title{padding-top:32px;padding-bottom:0}
+body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-title p{margin-bottom:0}
+@media(max-width:560px){body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-title{padding-top:24px}body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-top{padding-bottom:26px}}
 
 .location-body .location-action{margin-top:14px}
