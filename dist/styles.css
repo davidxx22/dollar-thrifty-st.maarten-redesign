@@ -167,7 +167,7 @@ html{scroll-padding-top:120px}
 .vehicle-card .car-heading h3{font-family:'Poppins',Arial,sans-serif;font-size:19px;font-weight:600;line-height:1.4;letter-spacing:-.02em;margin:0 0 4px}
 .vehicle-card .car-heading p{font-size:14px;line-height:1.5;letter-spacing:0;color:#737d78;margin:0}
 .vehicle-card .car-picture{background:transparent;aspect-ratio:600/310;margin:8px 12px 0;overflow:hidden}
-.vehicle-card .car-picture img{mix-blend-mode:normal;object-fit:contain;padding:8px;filter:drop-shadow(0 10px 6px #17222c30) drop-shadow(0 3px 2px #17222c1f)}
+.vehicle-card .car-picture img{position:relative;z-index:1;mix-blend-mode:normal;object-fit:contain;object-position:center bottom;padding:8px 8px 16px;filter:none}
 .vehicle-card .car-body{padding:14px 22px 18px}
 .vehicle-card .specs{gap:10px 12px;font-size:14px;color:#626e67}
 .vehicle-card .specs svg{width:17px;height:17px;color:#758178}
@@ -195,3 +195,7 @@ html{scroll-padding-top:120px}
 /* Match the main fleet catalogue to the four-column featured layout. */
 @media(min-width:1200px){#fleet-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(min-width:561px) and (max-width:1199px){#fleet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* A soft contact shadow on the ground beneath each vehicle, rather than its outline. */
+.vehicle-card .car-picture{isolation:isolate}
+.vehicle-card .car-picture::after{content:'';position:absolute;z-index:0;left:13%;right:13%;bottom:8px;height:14px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(20,26,29,.28) 0%,rgba(20,26,29,.16) 32%,rgba(20,26,29,.06) 56%,transparent 74%);filter:blur(3px);pointer-events:none}
