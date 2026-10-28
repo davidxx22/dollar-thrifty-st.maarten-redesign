@@ -204,7 +204,7 @@ html{scroll-padding-top:120px}
 /* Broad under-chassis shadow, kept on the hero vehicle's actual tire line. */
 .hero-vehicle{position:relative;z-index:1;container-type:size;width:min(1040px,84vw);height:350px;margin:0 auto;--hero-image-pad:0px}
 .hero-vehicle .hero-car{width:100%;height:100%;max-width:100%;margin:0;padding:0;aspect-ratio:auto;object-fit:contain;filter:none;position:relative;z-index:1}
-.hero-vehicle::after{content:'';position:absolute;z-index:0;left:5%;right:5%;--rendered-height:min(100cqh,calc((100cqw - var(--hero-image-pad)) / 2.872972973));height:clamp(16px,3cqw,36px);bottom:calc(50cqh - .494594595 * var(--rendered-height) - clamp(8px,1.5cqw,18px));border-radius:50%;background:radial-gradient(ellipse at center,rgba(4,12,17,.72) 0%,rgba(4,12,17,.51) 32%,rgba(4,12,17,.2) 62%,transparent 84%);filter:blur(clamp(3px,.55cqw,7px));pointer-events:none}
+.hero-vehicle::after{content:'';position:absolute;z-index:0;left:5%;right:5%;--rendered-height:min(100cqh,calc((100cqw - var(--hero-image-pad)) / 2.872972973));height:clamp(20px,5cqw,60px);bottom:calc(50cqh - .494594595 * var(--rendered-height) - clamp(10px,2.5cqw,30px));border-radius:50%;background:radial-gradient(ellipse at center,rgba(4,12,17,.72) 0%,rgba(4,12,17,.51) 32%,rgba(4,12,17,.2) 62%,transparent 84%);filter:blur(clamp(3px,.55cqw,7px));pointer-events:none}
 @media(min-width:1600px){.hero-vehicle{width:1150px;height:400px}}
 @media(max-width:850px){.hero-vehicle{width:85vw;height:310px}}
 @media(max-width:560px){.hero-vehicle{width:100%;height:215px;--hero-image-pad:10px}.hero-vehicle .hero-car{padding:0 5px}}
