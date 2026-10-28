@@ -316,3 +316,6 @@ body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-t
 @media(max-width:560px){body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-title{padding-top:24px}body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-top{padding-bottom:26px}}
 
 .location-body .location-action{margin-top:14px}
+/* Keep these three introductory gray bands equal in overall height. */
+body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-top{min-height:360px}
+@media(max-width:560px){body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-top{min-height:350px}}
