@@ -111,7 +111,7 @@ html{scroll-padding-top:120px}
 /* Five original company benefits, presented as spacious icon-led cards. */
 .why-choose{padding-top:70px;padding-bottom:40px}
 .benefits-heading{display:block;margin-bottom:44px}
-.benefits-heading h2{font-size:clamp(32px,3.3vw,48px);margin:0;line-height:1.2}
+.benefits-heading h2{margin:0}
 .benefits-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:30px}
 .benefit-icon{display:grid;place-items:center;width:120px;height:120px;border-radius:20px;margin-bottom:22px;color:white;background:var(--blue)}
 .benefit-icon.dark{background:var(--ink)}
@@ -223,7 +223,6 @@ html{scroll-padding-top:120px}
 /* Centered pastel benefit cards, following the supplied composition. */
 .why-choose{padding-top:80px;padding-bottom:80px}
 .why-choose .benefits-heading{text-align:left;margin-bottom:40px}
-.why-choose .benefits-heading h2{font-family:'Poppins',Arial,sans-serif;font-size:clamp(30px,3vw,42px);font-weight:600;line-height:1.25;letter-spacing:-.035em;text-transform:none}
 .benefits-grid.company-statements{gap:24px}
 .company-statements .benefit-card{--benefit-tint:#f1edfc;--benefit-edge:#d6cbef;--benefit-accent:#7543b5;max-width:none;min-height:300px;padding:38px 30px 34px;text-align:center;background:var(--benefit-tint);border:1px solid var(--benefit-edge);border-radius:18px;box-shadow:0 3px 0 color-mix(in srgb,var(--benefit-edge) 55%,transparent)}
 .company-statements .benefit-card:nth-child(2){--benefit-tint:#fff5ec;--benefit-edge:#efdbc7;--benefit-accent:#b8752e}
