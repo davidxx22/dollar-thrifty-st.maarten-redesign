@@ -14,7 +14,11 @@
       "classCode": "ICAR",
       "description": "Accessibly priced, frugal on fuel, and nicely equipped, the Hyundai Accent is a nice midsize sedan you won't be ashamed to drive. The Hyundai Accent feels lively, its small body is easily tossed into corners, and it's even rewarding when pushed. Rough roads are smoothed out adequately by the suspension.",
       "image": "assets/fleet-6.jpg",
-      "cardImage": "assets/fleet-profile-6.webp"
+      "cardImage": "assets/fleet-profile-6.webp",
+      "publishedRate": {
+        "day": 50.0,
+        "week": 290.0
+      }
     },
     {
       "id": 9,
@@ -30,7 +34,11 @@
       "classCode": "ICAR",
       "description": "The contours of the Honda City are strikingly unmistakable. That dash of panache, that magnetic presence, the roads will be overwhelmed! Get ready! Inside the City is a comfortable, ergonomically designed, ornately engineered space that takes your ride to a heightened level of classy.",
       "image": "assets/fleet-9.jpg",
-      "cardImage": "assets/fleet-profile-9.webp"
+      "cardImage": "assets/fleet-profile-9.webp",
+      "publishedRate": {
+        "day": 50.0,
+        "week": 290.0
+      }
     },
     {
       "id": 4,
@@ -46,7 +54,11 @@
       "classCode": "CCAR",
       "description": "Think of the Volkswagen Polo like you would your favorite pair of jeans. It's an affordable compact car that looks smart and is comfortable in everyday use. The Volkswagen badge on it's nose also gives it an added bit of posh desirability. ",
       "image": "assets/fleet-4.jpg",
-      "cardImage": "assets/fleet-profile-4.webp"
+      "cardImage": "assets/fleet-profile-4.webp",
+      "publishedRate": {
+        "day": 45.0,
+        "week": 250.0
+      }
     },
     {
       "id": 8,
@@ -62,7 +74,11 @@
       "classCode": "CCAR",
       "description": "A mundane lifestyle is for those who like to play safe, but those who dare to escape the everyday are the ones who live life in the \"active\" zone. Presenting the Hyundai i20, with its sporty styling and many first-in-class features, this car is built to make every day an adventure.",
       "image": "assets/fleet-8.jpg",
-      "cardImage": "assets/fleet-profile-8.webp"
+      "cardImage": "assets/fleet-profile-8.webp",
+      "publishedRate": {
+        "day": 50.0,
+        "week": 280.0
+      }
     },
     {
       "id": 3,
@@ -78,7 +94,11 @@
       "classCode": "CCAR",
       "description": "The Hyundai Grand i10 may be a small car, but it makes a big impression! This economy car is as punchy as it is fun to drive. Ideal for the bustle of town driving or cruising. ",
       "image": "assets/fleet-3.jpg",
-      "cardImage": "assets/fleet-profile-3.webp"
+      "cardImage": "assets/fleet-profile-3.webp",
+      "publishedRate": {
+        "day": 40.0,
+        "week": 240.0
+      }
     },
     {
       "id": 45,
@@ -94,7 +114,11 @@
       "classCode": "ICAR",
       "description": "Striking design, exhilarating performance, German engineered inside and out. The Volkswagen Virtus is crafted for the ones who chase experiences and who love nothing more than the freedom of driving a sedan crafted to thrill.",
       "image": "assets/fleet-45.jpg",
-      "cardImage": "assets/fleet-profile-45.webp"
+      "cardImage": "assets/fleet-profile-45.webp",
+      "publishedRate": {
+        "day": 50.0,
+        "week": 290.0
+      }
     },
     {
       "id": 71,
@@ -110,7 +134,11 @@
       "classCode": "CTMR",
       "description": "The Mazda MX-5 Miata offers more and sets the stage for the rest of the Mazda lineup. Available with the new fully retractable hard top roof, the Miata holds a special place in the hearts of driving enthusiasts like us for its simplicity. Don't expect vast cargo space in the Miata's small trunk but we can't keep ourselves from daydreaming about riding off into the St. Maarten/St. Martin sunsets in this.",
       "image": "assets/fleet-71.jpg",
-      "cardImage": "assets/fleet-profile-71.webp"
+      "cardImage": "assets/fleet-profile-71.webp",
+      "publishedRate": {
+        "day": 150.0,
+        "week": 850.0
+      }
     },
     {
       "id": 70,
@@ -126,7 +154,11 @@
       "classCode": "FCAR",
       "description": "When it comes to style, technology and fun, there’s nothing else like a Volkswagen Jetta to put the joy of driving in your day. The Jetta brings a look that has wow written all over it. Its eye-catching lines and tech-filled, smile-inducing cabin stand out from the crowd.",
       "image": "assets/fleet-70.jpg",
-      "cardImage": "assets/fleet-profile-70.webp"
+      "cardImage": "assets/fleet-profile-70.webp",
+      "publishedRate": {
+        "day": 60.0,
+        "week": 420.0
+      }
     },
     {
       "id": 68,
@@ -142,7 +174,11 @@
       "classCode": "PCAR",
       "description": "The Hyundai Sonata conveys a very spacious and airy feeling, with a decent amount of physical space in the front seats along with it's roomy rear seats. It has a large trunk, an intuitive infotainment system and a gentle premium ride. ",
       "image": "assets/fleet-68.jpg",
-      "cardImage": "assets/fleet-profile-68.webp"
+      "cardImage": "assets/fleet-profile-68.webp",
+      "publishedRate": {
+        "day": 70.0,
+        "week": 450.0
+      }
     },
     {
       "id": 58,
@@ -158,7 +194,11 @@
       "classCode": "LCAR",
       "description": "With a refined new front and rear design and the most advanced suite of standard driver-assist technologies from any full-line brand, the Ford Fusion is the smartest, most attractive choice in the segment.",
       "image": "assets/fleet-58.jpg",
-      "cardImage": "assets/fleet-profile-58.webp"
+      "cardImage": "assets/fleet-profile-58.webp",
+      "publishedRate": {
+        "day": 70.0,
+        "week": 450.0
+      }
     },
     {
       "id": 51,
@@ -174,7 +214,11 @@
       "classCode": "LCAR",
       "description": "Explore the island in ease and comfort in this rental car.",
       "image": "assets/fleet-51.jpg",
-      "cardImage": "assets/fleet-profile-51.webp"
+      "cardImage": "assets/fleet-profile-51.webp",
+      "publishedRate": {
+        "day": 70.0,
+        "week": 450.0
+      }
     },
     {
       "id": 87,
@@ -190,7 +234,11 @@
       "classCode": "FJAR",
       "description": "As one of the world’s most versatile vehicles, Jeep appeals to drivers of all stripes. One of the aspects that makes them unique is their convertible aspect. All Jeep Wranglers have removable tops whether a soft top or a hard top. Arguably the most popular type of top is the soft top which can be removed or replaced in short order. And you won’t need any help from a friend! Made of tough materials, they keep the elements at bay and let drivers open them up when the weather is agreeable (or not if you're feeling adventurous).",
       "image": "assets/fleet-87.jpg",
-      "cardImage": "assets/fleet-profile-87.webp"
+      "cardImage": "assets/fleet-profile-87.webp",
+      "publishedRate": {
+        "day": 160.0,
+        "week": 870.0
+      }
     },
     {
       "id": 82,
@@ -206,7 +254,11 @@
       "classCode": "STAR",
       "description": "One of the world's most beloved sports cars, the Ford Mustang has been in production since 1964. Whether it's used for top-down trips on the sunset or track time its suites best for most lifestyles and personalities. It has a roomier back seat and better outward visibility than the Chevy Camaro.",
       "image": "assets/fleet-82.jpg",
-      "cardImage": "assets/fleet-profile-82.webp"
+      "cardImage": "assets/fleet-profile-82.webp",
+      "publishedRate": {
+        "day": 160.0,
+        "week": 870.0
+      }
     },
     {
       "id": 111,
@@ -222,7 +274,11 @@
       "classCode": "MIFA",
       "description": "Built to take on the urban jungle, combines style, tech and spaciousness in this mini-SUV that’s nimble enough to dart through island traffic yet spacious enough to bring all your adventures home with you and with a wide range of advanced technology on your side, keeps you connected, entertained and, best of all, safe.",
       "image": "assets/fleet-111.jpg",
-      "cardImage": "assets/fleet-profile-111.webp"
+      "cardImage": "assets/fleet-profile-111.webp",
+      "publishedRate": {
+        "day": 60.0,
+        "week": 450.0
+      }
     },
     {
       "id": 118,
@@ -238,7 +294,11 @@
       "classCode": "MFAR",
       "description": "Perfect for those who lead an active lifestyle and welcome whatever the day may bring, the Ford Escape features plenty of options for you to express yourself, wherever and however you go. This midsize SUV has a solid reputation for delivering flexible cargo, passenger space, standard and available technology for confident connectivity all complemented by sporty good looks. The Ford Escape is designed to leave a lasting impression wherever the road takes you.",
       "image": "assets/fleet-118.jpg",
-      "cardImage": "assets/fleet-profile-118.webp"
+      "cardImage": "assets/fleet-profile-118.webp",
+      "publishedRate": {
+        "day": 95.0,
+        "week": 650.0
+      }
     },
     {
       "id": 152,
@@ -254,7 +314,11 @@
       "classCode": "MFAR",
       "description": "Designed for the modern adventurer, the Hyundai Tucson is the perfect midsize SUV for fun and functionality. It features a lively powertrain, a posh interior, two rows of spacious and comfortable seats. For these reasons and more, it stands tall near the top of the SUV class.",
       "image": "assets/fleet-152.jpg",
-      "cardImage": "assets/fleet-profile-152.webp"
+      "cardImage": "assets/fleet-profile-152.webp",
+      "publishedRate": {
+        "day": 95.0,
+        "week": 650.0
+      }
     },
     {
       "id": 161,
@@ -270,7 +334,11 @@
       "classCode": "FFAR",
       "description": "The commanding presence of Hyundai's optimized design with a sleek rear surface and a striking fascia sets it apart from other SUVs. When it comes to an incredibly flexible and practical seating layout, Grand Santa Fe knows how. Choose the standard 7-seater for a roomy interior in a 4:2:4 ratio or an optional 6-seater for extra convenience with an isolated seat configuration. Either way, Grand Santa Fe’s ergonomically designed seats ensure maximum comfort and dynamic space for everyone.",
       "image": "assets/fleet-161.jpg",
-      "cardImage": "assets/fleet-profile-161.webp"
+      "cardImage": "assets/fleet-profile-161.webp",
+      "publishedRate": {
+        "day": 150.0,
+        "week": 800.0
+      }
     },
     {
       "id": 151,
@@ -286,7 +354,11 @@
       "classCode": "SFAR",
       "description": "Whatever’s on your to-do list, even the most epic adventures, this standard size SUV available with 3rd row seating is up for making your journey the best it can be. The Hyundai Santa Fe has a spacious and upscale interior, tons of standard tech and safety features, great fuel economy, and solid handling. It is on point for all the excursions your family can muster. ",
       "image": "assets/fleet-151.jpg",
-      "cardImage": "assets/fleet-profile-151.webp"
+      "cardImage": "assets/fleet-profile-151.webp",
+      "publishedRate": {
+        "day": 125.0,
+        "week": 750.0
+      }
     },
     {
       "id": 182,
@@ -302,7 +374,11 @@
       "classCode": "FVAN",
       "description": "The H-1 full size and premium van offers numerous advantages as a 9- or 12-seater. Suiting a wide range of applications, from business to leisure, many seat variations are available. Passenger comfort is assured by a range of convenience functions and devices.",
       "image": "assets/fleet-182.jpg",
-      "cardImage": "assets/fleet-profile-182.webp"
+      "cardImage": "assets/fleet-profile-182.webp",
+      "publishedRate": {
+        "day": 190.0,
+        "week": 1095.0
+      }
     },
     {
       "id": 184,
@@ -318,7 +394,11 @@
       "classCode": "PVAN",
       "description": "The H-1 full size and premium van offers numerous advantages as a 9- or 12-seater. Suiting a wide range of applications, from business to leisure, many seat variations are available. Passenger comfort is assured by a range of convenience functions and devices.",
       "image": "assets/fleet-184.jpg",
-      "cardImage": "assets/fleet-profile-184.webp"
+      "cardImage": "assets/fleet-profile-184.webp",
+      "publishedRate": {
+        "day": 198.0,
+        "week": 1195.0
+      }
     },
     {
       "id": 164,
@@ -334,7 +414,11 @@
       "classCode": "LFAR",
       "description": "As the most substantial SUV in the Audi lineup, the Audi Q7 has ample cargo room and more-than-accommodating passenger capacity—proving that bigger is better. This Luxury SUV offer views all around. Zoom in on your vehicle’s exterior with the top view camera system with Virtual 360, which can alert you of potential obstacles and assists with parking. ",
       "image": "assets/fleet-164.jpg",
-      "cardImage": "assets/fleet-profile-164.webp"
+      "cardImage": "assets/fleet-profile-164.webp",
+      "publishedRate": {
+        "day": 185.0,
+        "week": 950.0
+      }
     },
     {
       "id": 178,
@@ -350,7 +434,11 @@
       "classCode": "PFAR",
       "description": "Experience the ultimate full-size SUV in the Honda Pilot with its Speedy and fuel-efficient V-6 powertrain, loads of cargo and interior space, packed with popular standard features. This SUV also stands out from its competitors as it comes 8 passengers seating! ",
       "image": "assets/fleet-178.jpg",
-      "cardImage": "assets/fleet-profile-178.webp"
+      "cardImage": "assets/fleet-profile-178.webp",
+      "publishedRate": {
+        "day": 180.0,
+        "week": 900.0
+      }
     },
     {
       "id": 179,
@@ -366,7 +454,11 @@
       "classCode": "SVAN",
       "description": "The Odyssey is ready to take on family adventures in style, with seating for up to 8 and parent-friendly features galore. From road trips to in-town grocery runs, this minivan is an ideal companion for any family. It also offers premium features throughout the cabin such as the hands-free access power tailgate, power sliding doors to help you load up your family and all your luggage’s with ease. ",
       "image": "assets/fleet-179.jpg",
-      "cardImage": "assets/fleet-profile-179.webp"
+      "cardImage": "assets/fleet-profile-179.webp",
+      "publishedRate": {
+        "day": 150.0,
+        "week": 850.0
+      }
     },
     {
       "id": 170,
@@ -382,7 +474,11 @@
       "classCode": "FFAR",
       "description": "Among Ford's vast lineup of trucks and SUV’s, the Explorer is the one that's best suited for family duty. With three rows of seats and generous cargo space, the Explorer is versatile for almost any trip. ",
       "image": "assets/fleet-170.jpg",
-      "cardImage": "assets/fleet-profile-170.webp"
+      "cardImage": "assets/fleet-profile-170.webp",
+      "publishedRate": {
+        "day": 160.0,
+        "week": 950.0
+      }
     },
     {
       "id": 210,
@@ -398,7 +494,11 @@
       "classCode": "HCAR",
       "description": "One of the world's most current clear demands was the need for more eco-conscious mobility solutions with lower environmental impact. Designers addressed these concerns through The Hyundai Ioniq hybrid car for use of eco-friendly and sustainably sourced materials.",
       "image": "assets/fleet-210.jpg",
-      "cardImage": "assets/fleet-profile-210.webp"
+      "cardImage": "assets/fleet-profile-210.webp",
+      "publishedRate": {
+        "day": 60.0,
+        "week": 420.0
+      }
     },
     {
       "id": 213,
@@ -414,7 +514,11 @@
       "classCode": "FFAR",
       "description": "The all-new Isuzu MUX is the perfect SUV for those with ambition and courage to take the lead. This 7-seater is fully equipped for your next on or off-road adventure.",
       "image": "assets/fleet-213.jpg",
-      "cardImage": "assets/fleet-profile-213.webp"
+      "cardImage": "assets/fleet-profile-213.webp",
+      "publishedRate": {
+        "day": 160.0,
+        "week": 850.0
+      }
     },
     {
       "id": 2568,
@@ -430,7 +534,11 @@
       "classCode": "MFAR",
       "description": "Make a statement, wherever you go. This is exactly what this standard size SUV does. The Tiguan has a stylish, versatile look that can fit your friends and family with extra cargo room when you fold the rear seats down in this 7-seater. You can easily pack whatever you need. The Tiguan is equipped with a suite of helpful tech features designed to help make parking, passing, and driving easier.",
       "image": "assets/fleet-2568.jpg",
-      "cardImage": "assets/fleet-profile-2568.webp"
+      "cardImage": "assets/fleet-profile-2568.webp",
+      "publishedRate": {
+        "day": 108.0,
+        "week": 745.0
+      }
     },
     {
       "id": 2635,
@@ -446,7 +554,11 @@
       "classCode": "PVAN",
       "description": "The revolutionary space of the Staria, where you will travel in maximum comfort, enjoy the pleasure of face-to-face conversation, and spend life-enriching moments. Available with 9 or 11 seats, the all-new Hyundai Staria is a multi-purpose vehicle delivering revolutionary space, futuristic design and maximum comfort.",
       "image": "assets/fleet-2635.jpg",
-      "cardImage": "assets/fleet-profile-2635.webp"
+      "cardImage": "assets/fleet-profile-2635.webp",
+      "publishedRate": {
+        "day": 198.0,
+        "week": 1195.0
+      }
     },
     {
       "id": 7160,
@@ -462,7 +574,11 @@
       "classCode": "LCAR",
       "description": "The all new Honda Accord pairs a sleek profile and flowing body lines with a feature packed interior, resulting in a luxury sedan that achieves the perfect balance between form and function. ",
       "image": "assets/fleet-7160.jpg",
-      "cardImage": "assets/fleet-profile-7160.webp"
+      "cardImage": "assets/fleet-profile-7160.webp",
+      "publishedRate": {
+        "day": 70.0,
+        "week": 450.0
+      }
     },
     {
       "id": 7181,
@@ -478,7 +594,11 @@
       "classCode": "SFAR",
       "description": "The Hyundai Creta Grand is a very surprising 7 seater standard size SUV. It is the longer version of the Creta. This SUV is below the Hyundai Tucson in the lineup however it packs loads of awesome luxury features and modern technologies. ",
       "image": "assets/fleet-7181.jpg",
-      "cardImage": "assets/fleet-profile-7181.webp"
+      "cardImage": "assets/fleet-profile-7181.webp",
+      "publishedRate": {
+        "day": 100.0,
+        "week": 700.0
+      }
     },
     {
       "id": 7196,
@@ -494,7 +614,11 @@
       "classCode": "FFAR",
       "description": "Mazda has massaged its hallmark driving verve deep into the CX-9 and the turbocharged four-cylinder engine does its best to add some excitement. Of course, this driver-focused experience isn’t without downsides. The interior may not be as roomy, but it’s certainly more upscale than expected thanks to premium materials and a timeless design.",
       "image": "assets/fleet-7196.jpg",
-      "cardImage": "assets/fleet-profile-7196.webp"
+      "cardImage": "assets/fleet-profile-7196.webp",
+      "publishedRate": {
+        "day": 150.0,
+        "week": 850.0
+      }
     },
     {
       "id": 7211,
@@ -510,7 +634,11 @@
       "classCode": "IFAR",
       "description": "Ford has hit the ball out of the park with its all-new 2022 Bronco 2 doors, a stunning retro-styled 4x4 crossover that delivers every bit of off-road capability that its rugged appearance promises. ",
       "image": "assets/fleet-7211.jpg",
-      "cardImage": "assets/fleet-profile-7211.webp"
+      "cardImage": "assets/fleet-profile-7211.webp",
+      "publishedRate": {
+        "day": 160.0,
+        "week": 870.0
+      }
     },
     {
       "id": 7226,
@@ -526,7 +654,11 @@
       "classCode": "FJAR",
       "description": "Ford has hit the ball out of the park with its all-new Bronco 4 doors, a stunning retro-styled 4x4 crossover that delivers every bit of off-road capability that its rugged appearance promises. ",
       "image": "assets/fleet-7226.jpg",
-      "cardImage": "assets/fleet-profile-7226.webp"
+      "cardImage": "assets/fleet-profile-7226.webp",
+      "publishedRate": {
+        "day": 195.0,
+        "week": 1075.0
+      }
     },
     {
       "id": 7262,
@@ -542,7 +674,11 @@
       "classCode": "MFAR",
       "description": "Meet the adventurous Taos. It’s smart, versatile, and always ready to go whenever you are. Among 20 other competitors, the Volkswagen Taos quenches an additional, more recent consumer craving for excellent fuel economy. There’s plenty of cargo space inside, even with the rear seats in use, to easily handle grocery duty.",
       "image": "assets/fleet-7262.jpg",
-      "cardImage": "assets/fleet-profile-7262.webp"
+      "cardImage": "assets/fleet-profile-7262.webp",
+      "publishedRate": {
+        "day": 95.0,
+        "week": 650.0
+      }
     },
     {
       "id": 13769,
@@ -558,7 +694,11 @@
       "classCode": "ECAR",
       "description": "The Hyundai Grand i10 may be a small car, but it makes a big impression! This economy car is as punchy as it is fun to drive. Ideal for the bustle of town driving or cruising. ",
       "image": "assets/fleet-13769.jpg",
-      "cardImage": "assets/fleet-profile-13769.webp"
+      "cardImage": "assets/fleet-profile-13769.webp",
+      "publishedRate": {
+        "day": 34.0,
+        "week": 225.0
+      }
     },
     {
       "id": 9167,
@@ -574,7 +714,11 @@
       "classCode": "CFAR",
       "description": "The new GAC GS3 hails from the popular compact SUV segment and will surely invite attention thanks to its attributes like attractive design, spaciousness, and value-for-money deal. ",
       "image": "assets/fleet-9167.jpg",
-      "cardImage": "assets/fleet-profile-9167.webp"
+      "cardImage": "assets/fleet-profile-9167.webp",
+      "publishedRate": {
+        "day": 75.0,
+        "week": 550.0
+      }
     },
     {
       "id": 9185,
@@ -590,7 +734,11 @@
       "classCode": "MFAR",
       "description": "The GAC GS4 Max midsize SUV brings more comfort and space whilst delivering that luxurious cabin tech that all modern-day drivers have come to appreciate. Value for the money all the way with this SUV!",
       "image": "assets/fleet-9185.jpg",
-      "cardImage": "assets/fleet-profile-9185.webp"
+      "cardImage": "assets/fleet-profile-9185.webp",
+      "publishedRate": {
+        "day": 95.0,
+        "week": 650.0
+      }
     },
     {
       "id": 15794,
@@ -606,7 +754,11 @@
       "classCode": "MIFA",
       "description": "A small, yet luxury mini-SUV in Geely's line up of modern-day SUV's. The GX3 Pro has a stylish interior, featuring a dual-gauge cluster accompanied by a 3.5-inch multi-information display, alongside an eight-inch touchscreen infotainment system. ",
       "image": "assets/fleet-15794.jpg",
-      "cardImage": "assets/fleet-profile-15794.webp"
+      "cardImage": "assets/fleet-profile-15794.webp",
+      "publishedRate": {
+        "day": 55.0,
+        "week": 320.0
+      }
     },
     {
       "id": 14684,
@@ -622,7 +774,11 @@
       "classCode": "PFAR",
       "description": "Hyundai Palisade is a three-row full size SUV that offers spacious seating, advanced technology and premium features. It has received several awards and accolades, such as the Best Family Cars of 2022 by Kelley Blue Book, the Family Vehicle of the Year by the Midwest Automotive Media Association, and the Best New Cars of 2020 by Autotrader.",
       "image": "assets/fleet-14684.jpg",
-      "cardImage": "assets/fleet-profile-14684.webp"
+      "cardImage": "assets/fleet-profile-14684.webp",
+      "publishedRate": {
+        "day": 150.0,
+        "week": 850.0
+      }
     },
     {
       "id": 16306,
@@ -638,7 +794,11 @@
       "classCode": "FJAR",
       "description": "The BJ40 is an absolute off-road beast while maintaining a very luxurious interior and offers comfortable drives. Enjoy the island with this Dollar Thrifty only exclusive semi-convertible all-terrain vehicle. ",
       "image": "assets/fleet-16306.jpg",
-      "cardImage": "assets/fleet-profile-16306.webp"
+      "cardImage": "assets/fleet-profile-16306.webp",
+      "publishedRate": {
+        "day": 160.0,
+        "week": 870.0
+      }
     },
     {
       "id": 16422,
@@ -654,7 +814,11 @@
       "classCode": "MVAN",
       "description": "The Hyundai Stargazer shows off a futuristic look that exudes dynamic and expressive characteristics. Its sleek one curve silhouette not only optimizes cabin height but also improves aerodynamics which enable a smoother ride and better fuel efficiency. Capable of accommodating 7 adult passengers with ease because of its largest-in-class wheelbase. This translates to roomier interior space in the 2nd and 3rd row on top of its flexible seat configurations.",
       "image": "assets/fleet-16422.jpg",
-      "cardImage": "assets/fleet-profile-16422.webp"
+      "cardImage": "assets/fleet-profile-16422.webp",
+      "publishedRate": {
+        "day": 130.0,
+        "week": 800.0
+      }
     },
     {
       "id": 26951,
@@ -670,7 +834,11 @@
       "classCode": "PCAR",
       "description": "New on St. Maarten/St. Martin and certainly one of the most stunning premium sedans on our roads, we introduce you to the all-new Changan Eado! This car luxury sedan is equipped with a 13.2-inch infotainment system, which supports both Apple CarPlay and Android Auto technologies, providing the driver and passengers with access to various entertainment and connectivity features of the modern age! ",
       "image": "assets/fleet-26951.jpg",
-      "cardImage": "assets/fleet-profile-26951.webp"
+      "cardImage": "assets/fleet-profile-26951.webp",
+      "publishedRate": {
+        "day": 70.0,
+        "week": 450.0
+      }
     },
     {
       "id": 17088,
@@ -686,7 +854,11 @@
       "classCode": "MFAR",
       "description": "Enjoy a young, modern and fun drive in the all new BAIC X55 exclusively found only at Dollar Thrifty Car Rental St. Maarten! ",
       "image": "assets/fleet-17088.jpg",
-      "cardImage": "assets/fleet-profile-17088.webp"
+      "cardImage": "assets/fleet-profile-17088.webp",
+      "publishedRate": {
+        "day": 95.0,
+        "week": 650.0
+      }
     },
     {
       "id": 27021,
@@ -702,7 +874,11 @@
       "classCode": "CFAR",
       "description": "We welcome you to the all-new Changan CS35! The perfect compact SUV to get you and your family around the island comfortably with great power for those steep hills! With more than 38 new features and upgrades from the latest cutting-edge technology delivering unparalleled driving pleasure, comfortable enjoyment and extraordinary quality.  ",
       "image": "assets/fleet-27021.jpg",
-      "cardImage": "assets/fleet-profile-27021.webp"
+      "cardImage": "assets/fleet-profile-27021.webp",
+      "publishedRate": {
+        "day": 65.0,
+        "week": 450.0
+      }
     },
     {
       "id": 27042,
@@ -718,7 +894,11 @@
       "classCode": "MFAR",
       "description": "The Changan CS55 is ready to master the streets with renewed safety and control thanks to the most advanced levels of innovation. This new midsize SUV comes with so much interior space and capability that provides you with an exceptional experience! ",
       "image": "assets/fleet-27042.jpg",
-      "cardImage": "assets/fleet-profile-27042.webp"
+      "cardImage": "assets/fleet-profile-27042.webp",
+      "publishedRate": {
+        "day": 95.0,
+        "week": 650.0
+      }
     },
     {
       "id": 28863,
@@ -734,7 +914,11 @@
       "classCode": "FFAR",
       "description": "We welcome you to the new stunning GAC GS8! Capable of catering to up to seven passengers including the driver. Its exterior design is quite intricately clean. It comes with a boxy design with the accompaniment of several distinctive design cues, such as uniquely shaped headlights. Its domineering and robust body posture is because of the lightweight vehicle body design it has, which is perfect for off-road use. Synonymous with its boxy exterior design is a roomy cabin, accentuated with a luxuriously presented interior, with its leather upholstered seats and the huge 14.6-inch HD LCD touchscreen audio & video system with Bluetooth and USB with wireless phone charging capability and not forgetting Apple Car Play! Convenience features include a keyless entry with a push-start button, a three-zone automatic air conditioning system, electrically adjustable seats, and a large panoramic sunroof for added entry of light within the cabin.",
       "image": "assets/fleet-28863.jpg",
-      "cardImage": "assets/fleet-profile-28863.webp"
+      "cardImage": "assets/fleet-profile-28863.webp",
+      "publishedRate": {
+        "day": 150.0,
+        "week": 850.0
+      }
     },
     {
       "id": 28885,
@@ -750,7 +934,11 @@
       "classCode": "MVAN",
       "description": "Introducing the all-new GAC M6! The M6 boasts a spacious interior with a 2-2-3 seating layout, accommodating up to seven passengers with ample cargo room thanks to its flat floor facilitating easy loading and hauling! ",
       "image": "assets/fleet-28885.jpg",
-      "cardImage": "assets/fleet-profile-28885.webp"
+      "cardImage": "assets/fleet-profile-28885.webp",
+      "publishedRate": {
+        "day": 130.0,
+        "week": 800.0
+      }
     },
     {
       "id": 29185,
@@ -766,7 +954,11 @@
       "classCode": "MFAR",
       "description": "Introducing the all new Forthing T5 EVO! This new arrival to St. Maarten/St. Martin is surely turning heads and having everyone wonder what this vehicle truly is. Equipped with all the bells and whistles of the modern day, this midsize SUV is sure to deliver a new driving experience! ",
       "image": "assets/fleet-29185.jpg",
-      "cardImage": "assets/fleet-profile-29185.webp"
+      "cardImage": "assets/fleet-profile-29185.webp",
+      "publishedRate": {
+        "day": 95.0,
+        "week": 650.0
+      }
     },
     {
       "id": 48490,
@@ -782,7 +974,11 @@
       "classCode": "PFAR",
       "description": "The Chery Tiggo 9 is the flagship mid-size SUV from Chery, primarily offered as a high-performance, three-row Plug-In Hybrid Electric Vehicle (PHEV). Featuring a powerful powertrain, an electric-only range of up to 140–170 km, and luxury-tier cabin tech, it is highly praised for offering premium features at a competitive price point.",
       "image": "assets/fleet-48490.jpg",
-      "cardImage": "assets/fleet-profile-48490.webp"
+      "cardImage": "assets/fleet-profile-48490.webp",
+      "publishedRate": {
+        "day": 150.0,
+        "week": 850.0
+      }
     },
     {
       "id": 29224,
@@ -798,7 +994,11 @@
       "classCode": "MFAR",
       "description": "Introducing the all new Baic X7! The careful design of this new midsize luxury SUV and extreme space utilization ensures that every inch of the interior offers the most functional and convenient storage solutions.  ",
       "image": "assets/fleet-29224.jpg",
-      "cardImage": "assets/fleet-profile-29224.webp"
+      "cardImage": "assets/fleet-profile-29224.webp",
+      "publishedRate": {
+        "day": 95.0,
+        "week": 650.0
+      }
     },
     {
       "id": 29239,
@@ -814,7 +1014,11 @@
       "classCode": "MVAN",
       "description": "Welcome to the all new Forthing M4 U-Tour! The perfect family luxury minivan. This new minivan offers 7 passenger comfortable seating whilst giving you the touch of the modern-day luxury tech and innovation. ",
       "image": "assets/fleet-29239.jpg",
-      "cardImage": "assets/fleet-profile-29239.webp"
+      "cardImage": "assets/fleet-profile-29239.webp",
+      "publishedRate": {
+        "day": 130.0,
+        "week": 800.0
+      }
     },
     {
       "id": 48517,
@@ -830,7 +1034,11 @@
       "classCode": "SFAR",
       "description": "The Honda BR-V is a popular 7-seater compact SUV/MPV crossover known for its car-like handling, high ground clearance, and excellent fuel efficiency. Powered by a 1.5L i-VTEC engine (121 PS), it is highly practical for families who want SUV styling without sacrificing minivan-like passenger space. ",
       "image": "assets/fleet-48517.jpg",
-      "cardImage": "assets/fleet-profile-48517.webp"
+      "cardImage": "assets/fleet-profile-48517.webp",
+      "publishedRate": {
+        "day": 100.0,
+        "week": 700.0
+      }
     },
     {
       "id": 51016,
@@ -846,7 +1054,11 @@
       "classCode": "CFAR",
       "description": "Get to know the island and ride easy in this rental SUV.",
       "image": "assets/fleet-51016.jpg",
-      "cardImage": "assets/fleet-profile-51016.webp"
+      "cardImage": "assets/fleet-profile-51016.webp",
+      "publishedRate": {
+        "day": 60.0,
+        "week": 320.0
+      }
     },
     {
       "id": 51110,
@@ -862,7 +1074,11 @@
       "classCode": "LFAR",
       "description": "Get to know the island and ride easy in this rental SUV.",
       "image": "assets/fleet-51110.jpg",
-      "cardImage": "assets/fleet-profile-51110.webp"
+      "cardImage": "assets/fleet-profile-51110.webp",
+      "publishedRate": {
+        "day": 180.0,
+        "week": 1000.0
+      }
     }
   ],
   "locations": [
@@ -1336,5 +1552,10 @@
     "All About Cookies",
     ". ",
     "http://www.allaboutcookies.org/"
-  ]
+  ],
+  "rateSource": {
+    "url": "https://www.dollarthriftysxm.com/",
+    "checkedOn": "2026-10-28",
+    "type": "Published catalogue rates; final booking quote and availability may vary."
+  }
 }

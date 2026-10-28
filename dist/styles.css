@@ -175,3 +175,15 @@ html{scroll-padding-top:120px}
 .vehicle-card .card-bottom button{border-radius:28px;width:116px;height:44px;min-height:44px}
 .car-rate-copy strong{font-size:17px}.vehicle-card .car-rate-copy small{font-size:12px}
 @media(max-width:560px){.car-heading{padding:20px 20px 0;min-height:82px}.vehicle-card .car-picture{aspect-ratio:600/300}.vehicle-card .car-body{padding:14px 20px 18px}.vehicle-card .specs{font-size:15px}.vehicle-card .card-bottom{padding:0 20px 20px}.vehicle-card .card-bottom button{width:130px}}
+
+/* Keep the right-hand specifications and Reserve action on the same column edge. */
+.vehicle-card{--reserve-width:116px}
+.vehicle-card .specs{grid-template-columns:minmax(0,1fr) var(--reserve-width)}
+.vehicle-card .card-bottom{display:grid;grid-template-columns:minmax(0,1fr) var(--reserve-width);gap:12px}
+.vehicle-card .card-bottom button{width:var(--reserve-width)}
+.car-rate-copy strong{display:flex;align-items:baseline;gap:3px;font-size:17px;white-space:nowrap}
+.rate-unit{font-size:12px;font-weight:400;color:#737d78}
+.vehicle-card .car-rate-copy small{font-size:12px;white-space:nowrap;letter-spacing:-.02em}
+@media(min-width:1200px) and (max-width:1399px){.vehicle-card{--reserve-width:108px}.car-rate-copy strong{font-size:16px}}
+@media(min-width:561px) and (max-width:1199px){#featured-cars{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.vehicle-card{--reserve-width:130px}}
