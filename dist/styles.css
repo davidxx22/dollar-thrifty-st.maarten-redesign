@@ -247,3 +247,7 @@ html{scroll-padding-top:120px}
 .numbers-grid>div:first-child dt{white-space:nowrap}
 @media(max-width:1100px){.numbers-grid>div:first-child{grid-column:1/-1}.numbers-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.numbers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.numbers-grid>div:last-child{grid-column:1/-1}}
+
+/* Give the company figures more space before the next section. */
+.company-numbers + .why-choose{padding-top:110px}
+@media(max-width:850px){.company-numbers + .why-choose{padding-top:90px}}
