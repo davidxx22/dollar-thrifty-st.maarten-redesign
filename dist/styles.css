@@ -224,9 +224,7 @@ html{scroll-padding-top:120px}
 .why-choose{padding-top:80px;padding-bottom:80px}
 .why-choose .benefits-heading{text-align:left;margin-bottom:40px}
 .benefits-grid.company-statements{gap:24px}
-.company-statements .benefit-card{--benefit-tint:#f1edfc;--benefit-edge:#d6cbef;--benefit-accent:#7543b5;max-width:none;min-height:300px;padding:38px 30px 34px;text-align:center;background:var(--benefit-tint);border:1px solid var(--benefit-edge);border-radius:18px;box-shadow:0 3px 0 color-mix(in srgb,var(--benefit-edge) 55%,transparent)}
-.company-statements .benefit-card:nth-child(2){--benefit-tint:#fff5ec;--benefit-edge:#efdbc7;--benefit-accent:#b8752e}
-.company-statements .benefit-card:nth-child(3){--benefit-tint:#edf7ed;--benefit-edge:#cce2ca;--benefit-accent:#43853e}
+.company-statements .benefit-card{--benefit-tint:#edf6fb;--benefit-edge:#cce3f0;--benefit-accent:var(--blue);max-width:none;min-height:300px;padding:38px 30px 34px;text-align:center;background:var(--benefit-tint);border:1px solid var(--benefit-edge);border-radius:18px;box-shadow:0 3px 0 color-mix(in srgb,var(--benefit-edge) 55%,transparent)}
 .company-statements .benefit-icon,.company-statements .benefit-icon.dark{display:grid;width:64px;height:64px;border-radius:50%;margin:0 auto 24px;background:white;color:var(--benefit-accent);box-shadow:0 3px 12px #17222c06}
 .company-statements .benefit-icon svg{width:29px;height:29px}
 .company-statements .benefit-card h3{font-size:18px;font-weight:600;line-height:1.45;min-height:0;margin:0 0 12px;letter-spacing:-.015em}
