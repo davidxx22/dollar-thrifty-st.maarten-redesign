@@ -366,3 +366,7 @@ body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-t
 .booking-invite-copy .btn.blue{background:white;color:var(--blue)}
 .booking-invite-copy .btn.blue:hover{background:#e8f3fa;color:#005384}
 .booking-invite-copy .btn:focus-visible{outline-color:white}
+
+/* Readable title case outside the uppercase hero headline. */
+h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-family:'Poppins',Arial,sans-serif;font-weight:600;text-transform:none;letter-spacing:-.035em}
+.hero h1{font-family:'Syncopate',Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.05em}
