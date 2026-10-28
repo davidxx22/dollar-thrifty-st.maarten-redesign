@@ -257,3 +257,19 @@ html{scroll-padding-top:120px}
 .btn.outline.location-action:hover{background:var(--blue);color:white}
 
 .location-feature .location-action{margin-top:14px}
+
+/* Icon-led rental steps with light dotted connections. */
+.how-grid.journey-steps{list-style:none;padding:0;margin:52px 0 0;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.journey-step{position:relative;text-align:center;--step-color:#8c66e8}
+.journey-step:nth-child(2){--step-color:#20abc9}
+.journey-step:nth-child(3){--step-color:#cb74bd}
+.step-icon{display:grid;place-items:center;width:72px;height:72px;margin:0 auto 30px;border-radius:18px;background:var(--step-color);color:white;box-shadow:0 12px 24px color-mix(in srgb,var(--step-color) 18%,transparent)}
+.step-icon svg{width:30px;height:30px}
+.journey-steps .journey-step h3{font-size:20px;line-height:1.45;letter-spacing:-.02em;margin:0 0 14px}
+.journey-steps .journey-step p{font-size:16px;line-height:1.8;max-width:310px;margin:0 auto;letter-spacing:0}
+.step-connector{position:absolute;top:35px;left:calc(50% + 58px);width:calc(100% - 76px);height:2px;background:repeating-linear-gradient(90deg,#dbe3ed 0 6px,transparent 6px 12px)}
+.step-connector::before,.step-connector::after{content:'';position:absolute;top:-3px;width:8px;height:8px;border-radius:50%;background:var(--step-color)}
+.step-connector::before{left:0}.step-connector::after{right:0;background:#20abc9}
+.journey-step:nth-child(2) .step-connector::after{background:#cb74bd}
+@media(max-width:900px){.how-grid.journey-steps{gap:28px}.step-connector{width:calc(100% - 88px)}.journey-steps .journey-step h3{font-size:18px}.journey-steps .journey-step p{font-size:15px}}
+@media(max-width:700px){.how-grid.journey-steps{grid-template-columns:1fr;gap:44px;margin-top:36px}.step-connector{display:none}.step-icon{width:64px;height:64px;border-radius:16px;margin-bottom:22px}.step-icon svg{width:28px;height:28px}.journey-steps .journey-step p{font-size:16px;max-width:360px}}
