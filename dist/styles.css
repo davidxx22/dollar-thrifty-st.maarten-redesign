@@ -283,3 +283,9 @@ html{scroll-padding-top:120px}
 
 .fleet-more .btn.outline{border-color:var(--blue);color:var(--blue);background:transparent}
 .fleet-more .btn.outline:hover{background:var(--blue);color:white}
+
+/* Accessible social icon links in the footer. */
+.footer .socials{gap:12px}
+.footer .socials a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #ffffff45;border-radius:50%;color:#fff;transition:background .2s,border-color .2s}
+.footer .socials svg{width:22px;height:22px;flex-shrink:0}
+.footer .socials a:hover{background:var(--blue);border-color:var(--blue)}
