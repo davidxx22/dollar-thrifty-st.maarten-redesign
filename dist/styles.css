@@ -359,4 +359,10 @@ body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-t
 @media(max-width:650px){.booking-invite{grid-template-columns:1fr;gap:0;padding:0 26px}.booking-invite-copy{padding:36px 0 30px}.booking-invite-copy h2{font-size:28px}.booking-invite-visuals{height:225px;gap:16px}.invite-vehicle{height:250px;padding:20px 12px}.invite-vehicle-low{margin-top:35px}.invite-vehicle-high{margin-top:0}.invite-vehicle img{height:110px}.booking-invite-section{padding-top:15px}}
 
 /* Pale Thrifty blue keeps the closing booking invitation within the brand palette. */
-.booking-invite{background:#87ceeb}
+.booking-invite{background:var(--blue)}
+
+.booking-invite-copy h2{color:white}
+.booking-invite-copy p{color:#f0f8fc}
+.booking-invite-copy .btn.blue{background:white;color:var(--blue)}
+.booking-invite-copy .btn.blue:hover{background:#e8f3fa;color:#005384}
+.booking-invite-copy .btn:focus-visible{outline-color:white}
