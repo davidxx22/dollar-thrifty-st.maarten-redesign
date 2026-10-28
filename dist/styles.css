@@ -187,3 +187,7 @@ html{scroll-padding-top:120px}
 @media(min-width:1200px) and (max-width:1399px){.vehicle-card{--reserve-width:108px}.car-rate-copy strong{font-size:16px}}
 @media(min-width:561px) and (max-width:1199px){#featured-cars{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.vehicle-card{--reserve-width:130px}}
+
+/* Keep two-line vehicle names aligned across both featured rows. */
+.car-heading{min-height:104px}
+@media(max-width:560px){.car-heading{min-height:104px}}
