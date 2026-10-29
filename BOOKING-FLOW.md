@@ -10,3 +10,10 @@ Reserve actions on homepage and Fleet now open `/booking?vehicle=ID` within the 
 Renter input is kept only in the page's form/memory; there are no booking API requests, payment inputs, fabricated totals, emails or confirmation numbers. Only the existing non-personal trip search is read from sessionStorage. Use sample details.
 
 To make this production-ready, the company must supply an approved booking integration for availability/rates, extras pricing, taxes/fees, coupons, renter/driver validation, reservation creation, confirmation/email and error handling. Original same-origin sessionStorage cannot be transferred to another domain. The public fleet endpoint was previously found to expose nested customer data and must not be reused. Optional driver fields and the free-text country calling code / referral fields need final validation against the approved integration. Additional vehicle gallery photographs are not present in the sanitized local dataset.
+
+
+## Pricing and calling-code update — 29 October 2026
+
+Public `assets/data/reservation-options.json` and the currently referenced main JavaScript bundle were checked on the original website. Extra daily reference rates: CDW $12 (vehicle-specific overrides are unavailable), GPS $7, liability $10, child seats $7 each, additional drivers $5 each, beach chairs $5 each. Extras multiply by rounded-up rental days and selected quantity. Vehicle rates retain the existing published-rate dataset; the original six-day/weekly calculation is used. Original fee rules: $2/day roadside, $15 airport/location fee, 5% tax on subtotal, then 13% surcharge after tax. All outputs are explicitly estimates; collision insurance may vary and coupons are not validated or deducted.
+
+The original site's `assets/data/country_calling_codes.json` supplies 243 countries/territories. The searchable picker requires an actual selection and supports keyboard navigation. Referral information is optional in this preview (the original service may require it). Finish preview stays disabled and gray until both policy checkboxes are selected.
