@@ -375,3 +375,7 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 .hero-scroll-strip{display:flow-root;height:48px;background:var(--soft)}
 .hero-scroll-strip .scroll-indicator{border-color:var(--soft)}
 @media(max-width:560px){.hero-scroll-strip{height:41px}}
+
+/* A tighter finish beneath the homepage fleet action. */
+#fleet.soft-section{padding-bottom:48px}
+@media(max-width:560px){#fleet.soft-section{padding-bottom:36px}}
