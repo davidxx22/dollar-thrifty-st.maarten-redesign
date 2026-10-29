@@ -12,3 +12,6 @@ for(const s of data.staff){if(!fs.existsSync(path.join(dist,s.photo)))throw Erro
 for(const p of ['index','fleet','locations','about','services','contact','reservations','faq','policies','cookie-policy','content-checklist'])if(!fs.existsSync(path.join(dist,p+'.html')))throw Error('Missing page '+p);
 if(!fs.existsSync(path.join(dist,'assets/hero-jeep.png')))throw Error('Missing hero cutout');
 console.log('PASS: JavaScript syntax, 11 pages, 54 fleet records, 10 locations, 6 booking locations, 13 staff, all image references, and public data allowlist.');
+new vm.Script(fs.readFileSync(path.join(dist,'booking.js'),'utf8'));
+if(!fs.existsSync(path.join(dist,'booking.html')))throw Error('Missing booking preview');
+await import('./booking-flow-test.mjs');
