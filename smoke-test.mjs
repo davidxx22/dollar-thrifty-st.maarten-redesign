@@ -3,7 +3,7 @@ import vm from 'node:vm';
 import path from 'node:path';
 const data=JSON.parse(fs.readFileSync('dist/data.json','utf8'));
 const source=fs.readFileSync('dist/app.js','utf8').replace(/init\(\);\s*$/,'');
-const names={home:'home',fleet:'fleetPage',locations:'locationsPage',about:'aboutPage',services:'servicesPage',contact:'contactPage',reservations:'reservationsPage',faq:'faqPage',policies:'policiesPage','cookie-policy':'cookiePage','content-checklist':'checklist'};
+const names={home:'home',fleet:'fleetPage',locations:'locationsPage',about:'aboutPage',contact:'contactPage',reservations:'reservationsPage',faq:'faqPage',policies:'policiesPage','cookie-policy':'cookiePage','content-checklist':'checklist'};
 for(const [page,fn] of Object.entries(names)){
  const context=vm.createContext({document:{body:{dataset:{page}},querySelector:()=>null},console});
  vm.runInContext(source,context);
