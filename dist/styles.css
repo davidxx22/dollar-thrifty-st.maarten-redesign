@@ -420,3 +420,5 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 @media(max-width:700px){.vehicle-range-grid{gap:16px}.vehicle-range-tile{min-height:220px;padding:20px}.vehicle-range-tile h3{font-size:20px}.vehicle-range-tile>span{left:20px;bottom:16px;font-size:12px}}
 @media(max-width:480px){.vehicle-range-grid{grid-template-columns:1fr}.vehicle-range-tile{min-height:250px}.vehicle-range>h2{font-size:30px}}
 @media(prefers-reduced-motion:reduce){.vehicle-range-tile img{transition:none;transform:none!important}}
+
+.how-it-works-title{text-align:center}
