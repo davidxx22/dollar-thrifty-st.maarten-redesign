@@ -463,3 +463,5 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 /* Balance the text inset against the overlapping phones on desktop. */
 @media(min-width:1000px){.booking-invite-copy{padding-left:24px}}
 @media(min-width:1500px){.booking-invite-copy{padding-left:96px}}
+
+.home-locations-map .home-map-credit{position:absolute;right:6px;bottom:6px;z-index:2;max-width:110px;background:#ffffffdc;color:#45565c;padding:3px 5px;border-radius:3px;font:9px/1.35 Arial,sans-serif;text-align:right;text-decoration:none}
