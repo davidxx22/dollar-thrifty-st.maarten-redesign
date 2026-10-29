@@ -460,3 +460,7 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 @media(min-width:1500px){.booking-phone-home{width:270px}.booking-phone-fleet{width:290px;top:32px}}
 @media(min-width:651px) and (max-width:850px){.booking-phone-home{width:200px;left:0;top:125px}.booking-phone-fleet{width:220px;left:90px;top:44px}}
 @media(max-width:650px){.booking-phone-visual{height:320px;max-width:330px}.booking-phone-home{width:190px;left:0;top:80px}.booking-phone-fleet{width:210px;left:115px;top:16px}}
+
+/* Balance the text inset against the overlapping phones on desktop. */
+@media(min-width:1000px){.booking-invite-copy{padding-left:24px}}
+@media(min-width:1500px){.booking-invite-copy{padding-left:96px}}
