@@ -427,8 +427,8 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 .home-locations{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,90px);align-items:center;padding-top:55px;padding-bottom:70px}
 .home-locations-copy h2{line-height:1.2;margin:0 0 26px}
 .home-locations-copy p{max-width:540px;font-size:17px;line-height:1.85;margin:0 0 20px}
-.home-locations-action{margin-top:12px;min-width:190px;width:auto;border-color:var(--blue);color:var(--blue);background:transparent}
-.home-locations-action:hover{background:var(--blue);color:white}
+.home-locations-copy .home-locations-action{margin-top:12px;min-width:190px;width:auto;border-color:var(--blue);color:var(--blue);background:transparent}
+.home-locations-copy .home-locations-action:hover{background:var(--blue);color:white}
 .home-locations-visual{position:relative;isolation:isolate;min-height:510px;display:flex;align-items:flex-start;justify-content:center;padding:0 30px 24px}
 .home-locations-map{position:absolute;z-index:0;left:0;right:0;top:120px;bottom:0;border-radius:12px;overflow:hidden;background:#e7eeeb}
 .home-locations-map iframe{border:0;width:100%;height:100%;filter:saturate(.55)}
