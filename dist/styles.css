@@ -405,3 +405,19 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 .home-about-numbers .numbers-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
 .home-about-numbers .numbers-grid>div:first-child,.home-about-numbers .numbers-grid>div:last-child{grid-column:auto}
 @media(max-width:700px){.home-about-numbers .numbers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 20px}.home-about-numbers .numbers-grid>div:first-child,.home-about-numbers .numbers-grid>div:last-child{grid-column:1/-1}.home-about-bottom{margin-top:38px}}
+
+/* Four real fleet categories in a compact, image-led tile grid. */
+.vehicle-range{padding-top:40px;padding-bottom:40px}
+.vehicle-range>h2{text-align:center;line-height:1.2;margin:0 0 36px}
+.vehicle-range-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:1020px;margin:0 auto}
+.vehicle-range-tile{position:relative;display:block;isolation:isolate;overflow:hidden;min-height:280px;border-radius:14px;background:linear-gradient(140deg,#34454d,#17232b);color:white;padding:26px 28px}
+.vehicle-range-tile:nth-child(2){background:linear-gradient(140deg,#47534a,#202c2d)}
+.vehicle-range-tile:nth-child(3){background:linear-gradient(140deg,#485661,#23303b)}
+.vehicle-range-tile:nth-child(4){background:linear-gradient(140deg,#525655,#252e31)}
+.vehicle-range-tile h3{position:relative;z-index:2;font-size:22px;line-height:1.4;font-weight:600;letter-spacing:-.02em;margin:0}
+.vehicle-range-tile img{position:absolute;z-index:1;left:5%;bottom:34px;width:90%;height:185px;object-fit:contain;transition:transform .35s ease}
+.vehicle-range-tile>span{position:absolute;z-index:2;left:28px;bottom:20px;font-size:13px;line-height:1.5;color:#f1f5f5}
+@media(hover:hover){.vehicle-range-tile:hover img{transform:scale(1.035)}.vehicle-range-tile:hover>span{text-decoration:underline;text-underline-offset:4px}}
+@media(max-width:700px){.vehicle-range-grid{gap:16px}.vehicle-range-tile{min-height:220px;padding:20px}.vehicle-range-tile h3{font-size:18px}.vehicle-range-tile img{height:140px;bottom:32px}.vehicle-range-tile>span{left:20px;bottom:16px;font-size:12px}}
+@media(max-width:480px){.vehicle-range-grid{grid-template-columns:1fr}.vehicle-range-tile{min-height:240px}.vehicle-range-tile img{height:170px}.vehicle-range>h2{font-size:30px}}
+@media(prefers-reduced-motion:reduce){.vehicle-range-tile img{transition:none;transform:none!important}}
