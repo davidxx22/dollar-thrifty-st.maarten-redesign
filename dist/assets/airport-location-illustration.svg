@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" fill="none">
+  <title>Airport pickup illustration in Simpson Bay</title>
+  <desc>Original schematic illustration of an airport and rental office connected by Airport Road. Not a navigation map.</desc>
+  <rect width="900" height="600" fill="#edf0e9"/>
+  <path d="M0 0h900v152c-85-22-134 61-207 48-78-14-122-60-210-39-83 20-104 76-188 60-84-16-146-62-218-29L0 224V0Z" fill="#cce7ed"/>
+  <path d="M0 224c71-29 105-54 177-28 57 20 101 42 160 28 70-17 101-62 175-64 94-4 127 60 203 36 82-26 115-67 185-42" stroke="#fff" stroke-width="8"/>
+  <path d="M38 75c38 0 38-12 76-12s38 12 76 12m505 10c38 0 38-12 76-12s38 12 76 12" stroke="#fff" stroke-width="3" opacity=".55" stroke-linecap="round"/>
+  <path d="M32 494c57-32 120-12 166 18s95 31 146 3m300-48c60-26 101-9 134 28s80 57 122 39" stroke="#d6e4cf" stroke-width="65" stroke-linecap="round"/>
+  <path d="M-20 290c139-70 204-18 313-10s185-54 303-26 201 61 324-8" stroke="#d7ded8" stroke-width="27" stroke-linecap="round"/>
+  <path d="M-20 290c139-70 204-18 313-10s185-54 303-26 201 61 324-8" stroke="#fff" stroke-width="19" stroke-linecap="round"/>
+  <path d="M95 276 61 151m77 123 57-53m-8 57 36 192m493-190 36 171m41-174 43-73m-75 217 139-36" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <path d="m743 346 78-15 18 77-78 16zM25 315l59-13 9 40-59 14zM23 176l34-9 14 44-35 10zM140 472l53-12 13 46-53 13z" fill="#d9e0d5"/>
+  <rect x="34" y="366" width="208" height="47" rx="7" transform="rotate(-8 34 366)" fill="#85989c"/>
+  <path d="m58 386 161-23" stroke="#fff" stroke-width="2" stroke-dasharray="11 9"/>
+  <path d="m47 372 3 19m177-44 3 19" stroke="#fff" stroke-width="4"/>
+  <rect x="77" y="310" width="85" height="27" rx="5" transform="rotate(-8 77 310)" fill="#bccad0"/>
+  <path d="m124 333 5 25" stroke="#bccad0" stroke-width="14"/>
+  <circle cx="115" cy="317" r="26" fill="#fff"/>
+  <path d="m115 301 3 10 11 6v4l-11-3v7l4 3v3l-7-2-7 2v-3l4-3v-7-0l-11 3v-4l11-6 3-10Z" fill="#006bab"/>
+  <text x="52" y="451" fill="#52666b" font-family="Arial,sans-serif" font-size="17">Airport</text>
+  <text x="42" y="476" fill="#82918f" font-family="Arial,sans-serif" font-size="12">Simpson Bay</text>
+  <path d="M776 250c0 27-32 53-32 53s-32-26-32-53a32 32 0 1 1 64 0Z" fill="#006bab"/>
+  <circle cx="744" cy="249" r="12" fill="#fff"/>
+  <path d="M737 251h14m-12-5 2-5h6l2 5v8h-10v-8Z" stroke="#006bab" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="744" cy="304" r="5" fill="#006bab" opacity=".2"/>
+  <text x="716" y="344" fill="#52666b" font-family="Arial,sans-serif" font-size="16">Main office</text>
+  <text x="730" y="368" fill="#82918f" font-family="Arial,sans-serif" font-size="12">Airport Road</text>
+  <circle cx="33" cy="525" r="7" fill="#c9dabf"/><circle cx="59" cy="547" r="12" fill="#c9dabf"/><circle cx="857" cy="465" r="10" fill="#c9dabf"/><circle cx="828" cy="485" r="7" fill="#c9dabf"/>
+</svg>
