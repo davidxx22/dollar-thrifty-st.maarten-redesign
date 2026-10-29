@@ -379,3 +379,22 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 /* A tighter finish beneath the homepage fleet action. */
 #fleet.soft-section{padding-bottom:48px}
 @media(max-width:560px){#fleet.soft-section{padding-bottom:36px}}
+
+/* Company introduction and figures share an editorial photo-and-text section. */
+.home-about{padding-top:80px;padding-bottom:50px}
+.home-about-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(40px,5vw,90px);align-items:center}
+.home-about-copy h2{margin:0 0 26px;line-height:1.2}
+.home-about-copy p{font-size:17px;line-height:1.85;max-width:560px;margin:0 0 20px}
+.home-about-copy .home-about-action{margin-top:8px;border-color:var(--blue);color:var(--blue);background:transparent}
+.home-about-copy .home-about-action:hover{background:var(--blue);color:white}
+.home-about-main-photo{width:100%;height:470px;object-fit:cover;object-position:center;border-radius:5px}
+.home-about-bottom{display:grid;grid-template-columns:260px minmax(0,1fr);gap:48px;align-items:center;margin-top:48px}
+.home-about-small-photo{width:100%;height:235px;object-fit:cover;object-position:center;border-radius:5px}
+.home-about-numbers h3{font-size:18px;font-weight:500;letter-spacing:0;margin:0 0 30px}
+.home-about-numbers .numbers-grid{grid-template-columns:1.65fr 1fr .8fr .8fr;gap:24px}
+.home-about-numbers .numbers-grid>div:first-child,.home-about-numbers .numbers-grid>div:last-child{grid-column:auto}
+.home-about-numbers .numbers-grid dt{font-size:14px}
+.home-about-numbers .numbers-grid dd{font-size:42px}
+@media(max-width:1399px){.home-about-bottom{grid-template-columns:220px minmax(0,1fr);gap:36px}.home-about-numbers .numbers-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.home-about-numbers .numbers-grid>div:first-child{grid-column:1/-1}.home-about-numbers h3{margin-bottom:24px}.home-about-numbers .numbers-grid dd{font-size:36px}}
+@media(max-width:850px){.home-about-top{grid-template-columns:1fr;gap:32px}.home-about-copy p{max-width:none}.home-about-main-photo{height:360px}.home-about-bottom{grid-template-columns:180px minmax(0,1fr);gap:28px}.home-about-small-photo{height:245px}.home-about{padding-top:65px;padding-bottom:30px}}
+@media(max-width:560px){.home-about-main-photo{height:300px}.home-about-bottom{grid-template-columns:1fr;gap:28px;margin-top:30px}.home-about-small-photo{width:62%;height:190px}.home-about-numbers .numbers-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 12px}.home-about-numbers .numbers-grid dt{font-size:13px}.home-about-numbers h3{font-size:17px}.home-about-copy p{font-size:16px}}
