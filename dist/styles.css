@@ -410,14 +410,11 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 .vehicle-range{padding-top:40px;padding-bottom:40px}
 .vehicle-range>h2{text-align:center;line-height:1.2;margin:0 0 36px}
 .vehicle-range-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:1020px;margin:0 auto}
-.vehicle-range-tile{position:relative;display:block;isolation:isolate;overflow:hidden;aspect-ratio:1.4;min-height:300px;border-radius:18px;background:#26323a url('assets/category-road-cars.webp') center/cover no-repeat;color:white;padding:26px 28px}
-.vehicle-range-tile:nth-child(2){background-image:url('assets/category-road-suvs.webp')}
-.vehicle-range-tile:nth-child(3){background-image:url('assets/category-road-convertibles.webp')}
-.vehicle-range-tile:nth-child(4){background-image:url('assets/category-road-vans.webp')}
-.vehicle-range-tile::before{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(125deg,#080e15a6,transparent 75%),linear-gradient(0deg,#07111a80,transparent 65%)}
-.vehicle-range-tile::after{content:'';position:absolute;z-index:0;left:9%;right:7%;bottom:19%;height:7%;border-radius:50%;background:#02070bc9;filter:blur(8px)}
+.vehicle-range-tile{position:relative;display:block;isolation:isolate;overflow:hidden;aspect-ratio:1.4;min-height:300px;border-radius:18px;background:#26323a;color:white;padding:26px 28px}
+.vehicle-range-tile::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,#060b105e,transparent 70%),linear-gradient(0deg,#07111a70,transparent 45%)}
+
 .vehicle-range-tile h3{position:relative;z-index:2;font-size:25px;line-height:1.4;font-weight:600;letter-spacing:-.02em;margin:0;text-shadow:0 2px 12px #0004}
-.vehicle-range-tile img{position:absolute;z-index:1;left:5%;bottom:19%;width:90%;height:58%;object-fit:contain;object-position:center bottom;filter:brightness(.88) saturate(.85);transition:transform .35s ease}
+.vehicle-range-tile img{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .35s ease}
 .vehicle-range-tile>span{position:absolute;z-index:2;left:28px;bottom:22px;font-size:13px;line-height:1.5;color:#fff;text-shadow:0 1px 5px #0008}
 @media(hover:hover){.vehicle-range-tile:hover img{transform:scale(1.035)}.vehicle-range-tile:hover>span{text-decoration:underline;text-underline-offset:4px}}
 @media(max-width:700px){.vehicle-range-grid{gap:16px}.vehicle-range-tile{min-height:220px;padding:20px}.vehicle-range-tile h3{font-size:20px}.vehicle-range-tile>span{left:20px;bottom:16px;font-size:12px}}
