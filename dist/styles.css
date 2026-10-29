@@ -370,3 +370,8 @@ body:is([data-page="fleet"],[data-page="locations"],[data-page="about"]) .page-t
 /* Readable title case outside the uppercase hero headline. */
 h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-family:'Poppins',Arial,sans-serif;font-weight:600;text-transform:none;letter-spacing:-.035em}
 .hero h1{font-family:'Syncopate',Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.05em}
+
+/* Join the hero scroll strip to the gray fleet section below it. */
+.hero-scroll-strip{display:flow-root;height:48px;background:var(--soft)}
+.hero-scroll-strip .scroll-indicator{border-color:var(--soft)}
+@media(max-width:560px){.hero-scroll-strip{height:41px}}
