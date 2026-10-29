@@ -409,7 +409,7 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 /* Scenic road photography behind the existing fleet vehicle cutouts. */
 .vehicle-range{padding-top:40px;padding-bottom:40px}
 .vehicle-range>h2{text-align:center;line-height:1.2;margin:0 0 36px}
-.vehicle-range-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:1020px;margin:0 auto}
+.vehicle-range-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:1160px;margin:0 auto}
 .vehicle-range-tile{position:relative;display:block;isolation:isolate;overflow:hidden;aspect-ratio:1.4;min-height:300px;border-radius:18px;background:#26323a;color:white;padding:26px 28px}
 .vehicle-range-tile::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,#060b105e,transparent 70%),linear-gradient(0deg,#07111a70,transparent 45%)}
 
