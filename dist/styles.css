@@ -467,6 +467,6 @@ h1,h2,.prose h2,.contact-card h2,.location-feature h2,.dialog-content h2{font-fa
 .home-locations-map .home-map-credit{position:absolute;right:6px;bottom:6px;z-index:2;max-width:110px;color:#27383e;font:9px/1.35 Arial,sans-serif;text-align:right;text-decoration:none;text-shadow:0 1px 2px #fff,0 0 3px #fff}
 
 /* Keep the office marker visible beside the location preview. */
-@media(min-width:701px){.home-locations-visual{justify-content:flex-end;padding-right:0}.home-locations-map{right:280px}.home-locations-map .home-map-snapshot{object-position:center}.home-locations-map .home-map-credit{right:6px}}
+@media(min-width:701px){.home-locations-visual{justify-content:flex-end;padding-right:0}.home-locations-map{right:280px}.home-locations-map .home-map-snapshot{object-position:center}.home-locations-map .home-map-credit{right:26px}}
 @media(min-width:1500px){.home-locations-map{right:310px}}
 @media(max-width:700px){.home-locations-visual{padding:180px 0 0;justify-content:flex-end;overflow:visible}.home-locations-map{top:0;right:0;bottom:auto;height:220px}.home-locations-map .home-map-snapshot{object-position:center}.location-preview-card{margin-bottom:0;padding-bottom:0;border-radius:20px 20px 0 0}.home-locations-map .home-map-credit{right:6px;top:6px;bottom:auto}}
