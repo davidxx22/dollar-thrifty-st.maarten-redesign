@@ -655,3 +655,10 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
 .home-category-menu{width:220px;max-width:100%}
 .home-category-menu>.location-select-trigger{border:0;background:transparent;color:var(--ink);padding-left:0;font-weight:500}
 .location-select-trigger[hidden],.location-select>select[hidden],.location-select-options[hidden]{display:none}
+
+/* Keep each mobile statistic label within its own column. */
+@media(max-width:700px){
+ .home-about-numbers .numbers-grid{column-gap:24px;row-gap:30px;align-items:start}
+ .home-about-numbers .numbers-grid>div{min-width:0;width:100%;gap:10px}
+ .home-about-numbers .numbers-grid>div:nth-child(n) dt{white-space:normal;width:100%;max-width:100%;min-width:0;font-size:13px;line-height:1.6;overflow-wrap:break-word;text-wrap:balance}
+}
