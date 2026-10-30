@@ -709,3 +709,15 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
  .booking-phone-home{width:52%;left:8%;top:75px}
  .booking-phone-fleet{width:58%;left:39%;top:15px}
 }
+
+/* Center mobile branding and keep the two footer link groups side by side. */
+@media(max-width:700px){
+ .footer .footer-top{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:30px 20px}
+ .footer .footer-top>div:first-child{grid-column:1/-1;text-align:center}
+ .footer .footer-top>div:first-child .footer-logo{margin-left:auto;margin-right:auto}
+ .footer .footer-top>div:first-child .socials{justify-content:center}
+ .footer .footer-top>div:nth-child(2){grid-column:1}
+ .footer .footer-top>div:nth-child(3){grid-column:2}
+ .footer .footer-top>div:last-child{grid-column:1/-1}
+ .footer .footer-top nav a{line-height:1.6;overflow-wrap:break-word}
+}
