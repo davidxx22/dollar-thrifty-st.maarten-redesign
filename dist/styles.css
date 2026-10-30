@@ -800,3 +800,24 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
 
 /* Keep the original filter dropdowns and reduce only their text size. */
 .fleet-filter-panel select,.fleet-filter-panel select option{font-size:14px}
+
+/* Preserve the boxed filter appearance while controlling option sizing on mobile browsers. */
+.fleet-filter-panel .location-select-trigger{
+ display:flex;align-items:center;justify-content:space-between;justify-self:stretch;
+ width:100%;height:44px;min-height:44px;margin:0;padding:8px 10px;
+ border:1px solid #d8ddda;border-radius:5px;background:white;color:var(--ink);
+ font:400 14px/1.5 'Poppins',Arial,sans-serif;text-decoration:none;
+}
+.fleet-filter-panel .location-select-trigger:focus-visible{outline:2px solid #0094df;outline-offset:3px}
+.fleet-filter-panel .location-select-options{
+ top:100%;left:0;right:0;width:100%;max-height:min(240px,40dvh);
+ padding:0;border:1px solid #899093;border-radius:0;background:white;box-shadow:0 6px 18px #17222c1a;
+}
+.fleet-filter-panel .location-select-options>button{
+ display:block;width:100%;min-height:32px;justify-self:stretch;margin:0;padding:6px 10px;
+ border:0;border-radius:0;background:white;color:var(--ink);
+ font:400 14px/1.45 'Poppins',Arial,sans-serif;text-decoration:none;text-align:left;
+}
+.fleet-filter-panel .location-select-options>button[aria-selected="true"],
+.fleet-filter-panel .location-select-options>button:hover,
+.fleet-filter-panel .location-select-options>button:focus-visible{background:#1967d2;color:white;outline:0}
