@@ -650,3 +650,8 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
 .location-select-options>button{display:block;width:100%;min-height:44px;border:0;border-radius:5px;padding:10px;text-align:left;white-space:normal;overflow-wrap:anywhere;font:400 15px/1.5 'Poppins',Arial,sans-serif;background:white;color:var(--ink)}
 .location-select-options>button[aria-selected="true"]{background:#edf6fb;color:var(--blue);font-weight:500}
 .location-select-options>button:hover,.location-select-options>button:focus-visible{background:#e6f2f9;outline:2px solid var(--blue);outline-offset:-2px}
+
+/* Match category options to the mobile location menu typography. */
+.home-category-menu{width:220px;max-width:100%}
+.home-category-menu>.location-select-trigger{border:0;background:transparent;color:var(--ink);padding-left:0;font-weight:500}
+.location-select-trigger[hidden],.location-select>select[hidden],.location-select-options[hidden]{display:none}
