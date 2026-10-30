@@ -525,3 +525,84 @@ body:is([data-page="faq"],[data-page="policies"],[data-page="cookie-policy"]) .p
 .journey-steps .journey-step:nth-child(n){--step-color:var(--blue);--step-tint:#edf6fb;--step-edge:#cce3f0}
 .journey-steps .step-connector{background:repeating-linear-gradient(90deg,#a5cce3 0 6px,transparent 6px 12px)}
 .journey-steps .journey-step .step-connector::before,.journey-steps .journey-step .step-connector::after{background:var(--blue)}
+/* Tablet and mobile refinement; the established desktop layout stays intact. */
+.nav .nav-mobile-book,.rental-mobile-total,.rental-summary-return{display:none}
+@media(max-width:1100px){
+ :root{--page-content-width:calc(100% - 48px)}
+ .section{padding-top:64px;padding-bottom:64px}.content{padding-top:40px;padding-bottom:60px}
+ body[data-page] .page-top{min-height:270px;display:flex;align-items:center;padding:0}
+ body[data-page] .page-top .page-title{padding:32px 0}
+ body[data-page] .page-top .page-title h1{font-size:clamp(32px,4.5vw,48px);margin-bottom:18px}
+ body[data-page] .page-top .page-title p{margin-bottom:0}
+ .hero-copy{padding:32px 20px 24px}.hero-sub{max-width:540px}.hero>main{min-height:0}
+ .booking-shell{width:var(--page-content-width);margin-top:4px}.booking-tabs{min-height:52px;padding:4px 18px;gap:20px;font-size:14px}
+ .booking-panel{padding:20px}.booking-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 22px;align-items:end}
+ .booking-grid>.field{grid-column:auto;grid-row:auto;gap:5px;padding:0;border:0}.booking-grid .field label{font-size:14px}
+ .booking-grid input,.booking-grid select,.booking-grid .time-trigger{font-size:16px;min-height:44px;height:44px}
+ .booking-grid .date-pair{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:10px}
+ .booking-grid>.btn{grid-column:1/-1;grid-row:auto;justify-self:end;width:180px;margin-top:2px}
+ .hero-stage{height:300px;margin-top:8px}.hero-vehicle{height:280px;width:min(900px,94vw)}.ground{inset:190px 0 0}
+ .vehicle-card .car-heading{min-height:86px}.vehicle-card .car-heading h3{font-size:19px}
+ .contact-grid{grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr);gap:28px}.contact-details-panel{padding:28px}.contact-detail-row{gap:12px}
+ .form-grid .field input,.form-grid .field textarea{font-size:16px;min-height:48px}.form-grid .field label{font-size:15px}
+ .location-body{padding:24px}.location-body h2{font-size:22px;line-height:1.35}.location-body p{font-size:16px}
+ .home-locations{grid-template-columns:1fr;gap:32px}.home-locations-copy{max-width:650px}.home-locations-visual{width:100%;max-width:680px;margin:auto}
+ .booking-phone-visual{height:340px;max-width:430px}.booking-phone-home{width:52%;left:0;top:100px}.booking-phone-fleet{width:58%;left:38%;top:35px}
+ .booking-invite-copy{padding-left:0}.booking-invite{padding-left:30px;padding-right:30px;gap:24px}
+}
+@media(max-width:1050px){
+ html{scroll-padding-top:100px}.site-header{height:84px;gap:16px}.logo{width:205px}.header-actions .btn{width:155px}.menu-toggle{min-width:44px;min-height:44px;padding:6px;font-size:23px}
+ .sticky-nav .nav{top:100%;left:0;right:0;padding:16px;gap:2px;border:1px solid #e2e7e9;border-radius:0 0 12px 12px;max-height:calc(100dvh - 100px)}
+ .nav>a{width:100%;min-height:44px;display:flex;align-items:center;padding:9px 14px;border-radius:6px}.nav>a:hover{background:#f1f6f9}
+ .nav .nav-mobile-book{display:flex;margin-top:10px;width:100%;color:white}.nav .nav-mobile-book:hover{background:#005384}
+}
+@media(max-width:1000px){
+ .rental-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}.rental-primary,.rental-summary{width:100%;min-width:0}.rental-summary{position:static;max-height:none;overflow:visible}
+ .rental-form-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.rental-summary-return{display:inline-block;font-size:14px;color:var(--blue);margin-bottom:20px}
+ .rental-flow{padding-bottom:55px}.rental-mobile-total{position:fixed;z-index:80;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:12px max(20px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom));background:white;border-top:1px solid #dfe6eb;box-shadow:0 -4px 20px #1439520a}
+ .rental-mobile-total>div{display:grid;gap:2px}.rental-mobile-total span{font-size:12px;color:var(--muted)}.rental-mobile-total strong{font-size:22px;color:var(--blue);line-height:1.3}.rental-mobile-total>a{font-size:14px;font-weight:500;color:var(--blue);padding:8px 0}
+ body[data-page="booking"]:has(.rental-mobile-total:not([hidden])){padding-bottom:85px}
+ #rental-cost-summary,#rental-reservation-form,#rental-review-step{scroll-margin-top:110px}.rental-steps{scroll-margin-top:110px}
+}
+@media(max-width:900px){
+ .split{grid-template-columns:minmax(0,1fr);gap:32px}.split .photo-block{height:clamp(260px,45vw,420px)}
+ .benefits-grid.company-statements{grid-template-columns:1fr;max-width:680px;margin-left:auto;margin-right:auto;gap:20px}.company-statements .benefit-card{padding:28px;min-height:0}
+ .company-statements .benefit-card p{max-width:500px}.company-statements .benefit-icon{margin-bottom:18px}
+ .journey-steps{grid-template-columns:1fr;gap:32px;max-width:620px;margin-left:auto;margin-right:auto}.journey-steps .step-connector{display:none}.journey-steps .step-icon{margin-bottom:18px}.journey-step h3{margin-bottom:12px}.journey-step p{max-width:500px;margin-left:auto;margin-right:auto}
+ .about-service-photos{max-width:650px}.about-team{padding:0}.about-team .team-tier .person-caption p{font-size:12px}
+}
+@media(max-width:700px){
+ :root{--page-content-width:calc(100% - 40px)}
+ .contact-grid{grid-template-columns:minmax(0,1fr);gap:36px}.locations-grid{grid-template-columns:minmax(0,1fr)}
+ .location-card img,.missing-photo{height:200px}.home-about-numbers .numbers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 16px}
+ .home-about-numbers .numbers-grid>div:first-child,.home-about-numbers .numbers-grid>div:last-child{grid-column:auto}
+ .home-about-numbers .numbers-grid dt{white-space:normal;font-size:13px;line-height:1.6;max-width:100%}.home-about-numbers .numbers-grid dd{font-size:34px}
+ .home-locations-visual{min-height:0;padding:200px 0 0}.home-locations-map{height:240px}.location-preview-card{width:min(300px,90%);flex-shrink:0}.home-locations-map .home-map-credit{font-size:9px}
+ .footer-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 22px}.footer-top>div{min-width:0}.footer-top>div:first-child,.footer-top>div:last-child{grid-column:1/-1}.footer h4{margin-bottom:14px}.footer nav{gap:4px}.footer nav a{display:inline-flex;align-items:center;min-height:40px}
+ .footer p,.footer a{font-size:14px}.footer-bottom{font-size:12px;margin-top:30px}.footer-logo{width:210px}
+ .category-tabs{max-width:100%;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;padding:4px 0 10px;gap:8px;scrollbar-width:thin}.category-tabs button{flex:0 0 auto;min-height:44px;padding:9px 16px;font-size:14px}
+ .fleet-toolbar{gap:15px}.fleet-tools{width:100%;min-width:0}.fleet-tools input{font-size:16px;max-width:none;min-width:0;flex:1}.fleet-filter-menu{flex-shrink:0}.fleet-filter-panel{width:min(280px,calc(100vw - 40px));max-width:none}.fleet-filter-menu summary{min-height:48px}
+}
+@media(max-width:560px){
+ .site-header{height:72px}.logo{width:180px}.header-actions{gap:10px}.sticky-nav .nav{max-height:calc(100dvh - 88px)}
+ html{scroll-padding-top:90px}.hero-copy{padding:24px 20px 20px}.hero h1{margin-bottom:16px}.hero-sub{font-size:16px;line-height:1.7;max-width:340px}
+ .booking-tabs{width:100%;min-height:48px;padding:3px 14px;gap:12px;font-size:13px}.booking-tabs a{padding-left:12px;min-height:40px}
+ .booking-panel{padding:18px 16px}.booking-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 14px}
+ .booking-grid>.field:nth-child(-n+4){grid-column:1/-1}.booking-grid>.field:nth-child(n+5){grid-column:auto}.booking-grid>.field{gap:4px}
+ .booking-grid .field label{font-size:14px;font-weight:500}.booking-grid select,.booking-grid input,.booking-grid .time-trigger{font-size:16px;height:44px;padding:8px 6px;border:1px solid #e1e6e8;border-radius:5px;background:white}
+ .booking-grid .date-pair{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:10px}.booking-grid .time-trigger{padding-left:10px;padding-right:10px}
+ .booking-grid>.btn{width:100%;max-width:none;justify-self:stretch;height:48px;margin-top:3px}
+ .clock-column button{height:44px}.time-popover{max-width:calc(100vw - 52px)}
+ .hero-stage{height:210px;margin-top:10px}.hero-vehicle{width:100%;height:190px}.ground{inset:135px 0 0}
+ .section{padding-top:48px;padding-bottom:48px}.content{padding-top:32px;padding-bottom:48px}.section-head{margin-bottom:24px}.section-head h2{font-size:28px}
+ body[data-page] .page-top{min-height:235px}body[data-page] .page-top .page-title{padding:28px 0}body[data-page] .page-top .page-title h1{font-size:clamp(30px,7.5vw,36px);margin-bottom:16px}body[data-page] .page-top .page-title p{font-size:16px;line-height:1.75}
+ .fleet-grid{gap:20px}.vehicle-card .car-heading{min-height:0;padding:18px 18px 0}.vehicle-card .car-heading h3{font-size:19px}.vehicle-card .car-picture{margin-top:6px}.vehicle-card .car-body{padding:10px 18px 16px}.vehicle-card .card-bottom{padding:0 18px 18px}
+ .home-about{padding-top:48px;padding-bottom:32px}.home-about-main-photo{height:260px}.home-about-bottom{margin-top:32px}.why-choose{padding-top:45px;padding-bottom:16px}.benefits-heading{margin-bottom:26px}.company-statements .benefit-card{padding:26px 22px}.company-statements .benefit-card p{font-size:16px}
+ .home-locations{padding-top:35px;padding-bottom:40px}.home-locations-copy h2{font-size:28px}.booking-invite-section{padding-top:30px}.booking-invite{padding:0 24px;gap:0;border-radius:16px}.booking-invite-copy{padding:30px 0 22px}.booking-invite-copy h2{font-size:28px;margin-bottom:18px}.booking-invite-copy p{font-size:16px;line-height:1.75;margin-bottom:24px}
+ .booking-phone-visual{height:285px;max-width:310px}.booking-phone-home{width:58%;left:1%;top:75px}.booking-phone-fleet{width:64%;left:34%;top:15px}.booking-phone{padding:6px;border-radius:27px}.booking-phone-screen{border-radius:21px}.booking-phone::after{top:11px;width:45px;height:11px}
+ .contact-details-panel{padding:26px}.contact-detail-row{gap:14px}.contact-detail-row p a{overflow-wrap:normal;word-break:normal}.contact-panel-social{margin-top:25px}.form-grid{gap:17px}.form-grid .field{grid-column:1/-1}
+ .about-team{margin-top:50px}.team-tier-title{margin-bottom:22px}.team-tier+.team-tier{margin-top:32px;padding-top:28px}.about-team .team-tier .person-caption h4{font-size:17px}.about-team .team-tier .person-caption p{font-size:12px;letter-spacing:0}
+ .rental-flow{padding-top:26px}.rental-page-heading{margin-bottom:22px}.rental-page-heading h1{font-size:28px}.rental-page-heading p{font-size:16px;line-height:1.7}.rental-steps{scroll-margin-top:90px}.rental-form-grid{grid-template-columns:minmax(0,1fr);gap:18px}.rental-field{font-size:14px}.rental-field>input,.rental-field>select,.rental-field>textarea{font-size:16px;min-height:48px}.rental-surface{padding:22px 18px}.rental-bottom-actions .btn{width:160px}.rental-bottom-actions>a,.rental-back{font-size:13px}.rental-spec-grid dd{font-size:14px}.rental-extra>label{min-height:44px;font-size:15px}.rental-extra select{min-height:44px}.rental-extra details summary{padding:6px 0}.rental-country-control>input{font-size:16px}#rental-country-list>button{min-height:44px;font-size:14px}.rental-policy label{font-size:14px}.rental-policy input{margin-top:3px;width:20px;height:20px}.rental-mobile-total{gap:14px}.rental-mobile-total>a{font-size:13px}
+ .reservation-detail-main,.reservation-detail-car{padding:22px 18px}.reservation-find-form input{font-size:16px}.reservation-itinerary{padding:18px}.reservation-detail-section .btn{width:100%}
+}
+@media(max-width:360px){.logo{width:165px}.booking-tabs{font-size:12px;gap:9px;padding-left:10px;padding-right:10px}.booking-tabs a{padding-left:9px}.booking-panel{padding:16px 12px}.booking-grid{column-gap:10px}.vehicle-card{--reserve-width:108px}.vehicle-card .car-body{padding-left:16px;padding-right:16px}.vehicle-card .card-bottom{padding-left:16px;padding-right:16px}.car-rate-copy strong{font-size:16px}.rental-bottom-actions .btn{width:140px;font-size:13px}.rental-policy label{font-size:13px}}
