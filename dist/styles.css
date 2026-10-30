@@ -662,3 +662,17 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
  .home-about-numbers .numbers-grid>div{min-width:0;width:100%;gap:10px}
  .home-about-numbers .numbers-grid>div:nth-child(n) dt{white-space:normal;width:100%;max-width:100%;min-width:0;font-size:13px;line-height:1.6;overflow-wrap:break-word;text-wrap:balance}
 }
+
+/* Stack the map and office details cleanly on phones. */
+@media(max-width:700px){
+ .home-locations-visual{display:block;min-height:0;height:auto;padding:0;overflow:visible}
+ .home-locations-map{position:relative;inset:auto;width:100%;height:220px;border-radius:12px}
+ .home-locations-map .home-map-credit{top:auto;bottom:6px;right:6px}
+ .home-locations .location-preview-card{width:calc(100% - 24px);max-width:none;margin:-24px 12px 0;padding-bottom:0;border:1px solid #e6eae8;border-radius:12px;box-shadow:0 10px 28px #1c344514}
+ .home-locations .location-preview-card>img{height:170px}
+ .home-locations .location-preview-heading{padding:16px 20px}
+ .home-locations .location-preview-details{padding:20px}
+ .home-locations .location-preview-details dt{font-size:12px}
+ .home-locations .location-preview-details dd{font-size:14px;line-height:1.6}
+ .home-locations .location-preview-details>a{min-height:44px;display:inline-flex;align-items:center;margin-top:12px;font-size:14px}
+}
