@@ -606,3 +606,15 @@ body:is([data-page="faq"],[data-page="policies"],[data-page="cookie-policy"]) .p
  .reservation-detail-main,.reservation-detail-car{padding:22px 18px}.reservation-find-form input{font-size:16px}.reservation-itinerary{padding:18px}.reservation-detail-section .btn{width:100%}
 }
 @media(max-width:360px){.logo{width:165px}.booking-tabs{font-size:12px;gap:9px;padding-left:10px;padding-right:10px}.booking-tabs a{padding-left:9px}.booking-panel{padding:16px 12px}.booking-grid{column-gap:10px}.vehicle-card{--reserve-width:108px}.vehicle-card .car-body{padding-left:16px;padding-right:16px}.vehicle-card .card-bottom{padding-left:16px;padding-right:16px}.car-rate-copy strong{font-size:16px}.rental-bottom-actions .btn{width:140px;font-size:13px}.rental-policy label{font-size:13px}}
+
+/* Small-screen featured fleet: category dropdown and a swipeable card row. */
+.home-category-select{display:none}
+@media(max-width:560px){
+ #fleet .section-head{margin-bottom:16px}#fleet .section-head h2{font-size:28px;line-height:1.25}
+ #home-categories{display:none}.home-category-select{display:block;margin-bottom:20px}
+ #home-vehicle-category{font:500 16px 'Poppins',Arial,sans-serif;color:var(--ink);background:transparent;border:0;border-radius:4px;min-height:44px;max-width:100%;padding:8px 28px 8px 0;cursor:pointer}
+ #featured-cars{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc(100% - 36px);gap:16px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-left:20px;margin-left:-20px;margin-right:-20px;padding:0 20px 14px;scrollbar-width:thin}
+ #featured-cars>.vehicle-card{min-width:0;scroll-snap-align:start;border-radius:20px}
+ #featured-cars .car-heading{min-height:86px}#featured-cars .car-picture{border-radius:14px}
+ #home-fleet-action{margin-top:24px}#home-fleet-action .btn{width:auto;min-width:180px;max-width:100%;border-radius:999px;padding-left:26px;padding-right:26px}
+}
