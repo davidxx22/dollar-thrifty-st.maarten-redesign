@@ -700,5 +700,12 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
 .home-locations-map>picture{display:block;width:100%;height:100%}
 @media(max-width:700px){.home-locations-map .home-map-snapshot{object-position:46% center}}
 
-.home-map-landmark{display:none}
-@media(max-width:700px){.home-map-landmark{display:block;position:absolute;top:62%;left:6px;max-width:calc(100% - 12px);padding:3px 5px;background:#fffffff0;border-radius:3px;color:#27383e;font:500 10px/1.35 'Poppins',Arial,sans-serif}}
+
+/* Center the closing invitation and balance the phone pair on small screens. */
+@media(max-width:650px){
+ .booking-invite-copy{text-align:center;padding-left:0;padding-right:0}
+ .booking-invite-copy p{margin-left:auto;margin-right:auto}
+ .booking-phone-visual{margin-left:auto;margin-right:auto}
+ .booking-phone-home{width:52%;left:8%;top:75px}
+ .booking-phone-fleet{width:58%;left:39%;top:15px}
+}
