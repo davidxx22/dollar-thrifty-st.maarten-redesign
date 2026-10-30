@@ -821,3 +821,10 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
 .fleet-filter-panel .location-select-options>button[aria-selected="true"],
 .fleet-filter-panel .location-select-options>button:hover,
 .fleet-filter-panel .location-select-options>button:focus-visible{background:#1967d2;color:white;outline:0}
+
+/* Respect the responsive control switch and keep filter values left aligned. */
+.fleet-filter-panel .location-select-trigger[hidden],
+.fleet-filter-panel .location-select>select[hidden]{display:none}
+.fleet-filter-panel .location-select-trigger{text-align:left}
+.fleet-filter-panel .location-select-trigger>span{flex:1;text-align:left}
+.fleet-filter-panel select{text-align:left;text-align-last:left}
