@@ -771,3 +771,9 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
  .home-about-numbers .numbers-grid>div{min-width:0}
  .home-about-numbers .numbers-grid>div:first-child dt{white-space:normal;width:100%;max-width:100%;min-width:0;overflow-wrap:break-word;text-wrap:balance}
 }
+
+/* Crop larger phone mockups through the CTA edge on iPad mini screens. */
+@media(min-width:701px) and (max-width:819px){
+ .booking-phone-home{width:58%;left:4%;top:100px}
+ .booking-phone-fleet{width:68%;left:34%;top:20px}
+}
