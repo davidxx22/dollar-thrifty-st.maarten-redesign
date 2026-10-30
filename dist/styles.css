@@ -777,3 +777,23 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
  .booking-phone-home{width:58%;left:4%;top:100px}
  .booking-phone-fleet{width:68%;left:34%;top:20px}
 }
+
+/* Keep fleet categories, search and filters together on compact screens. */
+.fleet-category-select{display:none}
+@media(max-width:819px){
+ .fleet-toolbar{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.5fr);gap:12px;align-items:center}
+ .fleet-toolbar #fleet-categories{display:none}
+ .fleet-category-select{display:block;min-width:0}
+ .fleet-category-select .home-category-menu{width:100%}
+ .fleet-category-select .location-select-trigger{font-size:14px;gap:8px;padding-right:8px}
+ .fleet-category-select .location-select-options{width:max(100%,190px);right:auto;max-width:calc(100vw - 40px)}
+ .fleet-toolbar .fleet-tools{width:100%;min-width:0;gap:10px;margin:0}
+ .fleet-toolbar #fleet-search{width:0;min-width:0;flex:1}
+}
+@media(max-width:560px){
+ .fleet-toolbar{grid-template-columns:114px minmax(0,1fr);gap:8px}
+ .fleet-toolbar #fleet-search{font-size:14px;padding:10px}
+ .fleet-filter-menu summary{width:44px;min-height:48px;padding:10px;position:relative}
+ .fleet-filter-label{display:none}
+ .fleet-filter-menu #fleet-filter-count{position:absolute;right:-5px;top:-7px;width:18px;height:18px;font-size:10px}
+}
