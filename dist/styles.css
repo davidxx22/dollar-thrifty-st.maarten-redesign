@@ -676,3 +676,23 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
  .home-locations .location-preview-details dd{font-size:14px;line-height:1.6}
  .home-locations .location-preview-details>a{min-height:44px;display:inline-flex;align-items:center;margin-top:12px;font-size:14px}
 }
+
+/* A scaled version of the desktop map-and-phone composition on small screens. */
+@media(max-width:700px){
+ .home-locations-visual{--mobile-location-card-width:min(66%,280px);display:flex;align-items:stretch;justify-content:flex-end;isolation:isolate;min-height:0;padding:0 0 20px;overflow:visible}
+ .home-locations-map{position:absolute;left:0;right:calc(var(--mobile-location-card-width) - 16px);top:64px;bottom:20px;width:auto;height:auto;border-radius:10px}
+ .home-locations-map .home-map-snapshot{object-position:52% center}
+ .home-locations-map .home-map-credit{top:auto;bottom:6px;left:6px;right:auto;max-width:90px;font-size:8px;text-align:left}
+ .home-locations .location-preview-card{width:var(--mobile-location-card-width);max-width:280px;min-width:0;margin:0;padding:0;border:1px solid #e6eae8;border-radius:16px 16px 0 0;box-shadow:0 10px 28px #1c34451a}
+ .home-locations .location-preview-heading{padding:12px 12px;gap:6px;font-size:12px}
+ .home-locations .location-preview-heading svg{width:17px;height:17px;flex-shrink:0}
+ .home-locations .location-preview-card>img{height:120px}
+ .home-locations .location-preview-details{padding:14px 12px}
+ .home-locations .location-preview-details h3{font-size:16px;line-height:1.4;margin-bottom:7px}
+ .home-locations .location-preview-details>p{font-size:12px;line-height:1.65;margin-bottom:14px}
+ .home-locations .location-preview-details dl{gap:12px}
+ .home-locations .location-preview-details dt{font-size:11px}
+ .home-locations .location-preview-details dd{font-size:12px;line-height:1.65}
+ .home-locations .location-preview-details>a{font-size:12px;margin-top:8px;min-height:44px}
+}
+@media(max-width:360px){.home-locations-visual{--mobile-location-card-width:69%}.home-locations .location-preview-card>img{height:105px}.home-locations .location-preview-heading{padding:10px;font-size:11px}.home-locations .location-preview-details{padding:12px 10px}.home-locations .location-preview-details h3{font-size:15px}}
