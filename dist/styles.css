@@ -613,8 +613,10 @@ body:is([data-page="faq"],[data-page="policies"],[data-page="cookie-policy"]) .p
  #fleet .section-head{margin-bottom:16px}#fleet .section-head h2{font-size:28px;line-height:1.25}
  #home-categories{display:none}.home-category-select{display:block;margin-bottom:20px}
  #home-vehicle-category{font:500 16px 'Poppins',Arial,sans-serif;color:var(--ink);background:transparent;border:0;border-radius:4px;min-height:44px;max-width:100%;padding:8px 28px 8px 0;cursor:pointer}
- #featured-cars{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc(100% - 36px);gap:16px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-left:20px;margin-left:-20px;margin-right:-20px;padding:0 20px 14px;scrollbar-width:thin}
+ #featured-cars{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc(100% - 36px);gap:16px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-left:20px;margin-left:-20px;margin-right:-20px;padding:0 20px 14px;scrollbar-width:none}
  #featured-cars>.vehicle-card{min-width:0;scroll-snap-align:start;border-radius:20px}
  #featured-cars .car-heading{min-height:86px}#featured-cars .car-picture{border-radius:14px}
  #home-fleet-action{margin-top:24px}#home-fleet-action .btn{width:auto;min-width:180px;max-width:100%;border-radius:999px;padding-left:26px;padding-right:26px}
 }
+
+@media(max-width:560px){#featured-cars::-webkit-scrollbar{display:none}}
