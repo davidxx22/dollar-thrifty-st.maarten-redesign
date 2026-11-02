@@ -40,25 +40,30 @@ function openVehicle(id){if(D.fleet.some(v=>v.id===Number(id)))location.href='bo
 function reservationExample(){const v=D.fleet.find(v=>v.id===70)||D.fleet[0],name=v.brand+' '+v.model.trim();const date=offset=>{const day=new Date();day.setDate(day.getDate()+offset);return day.toLocaleDateString('en-US',{day:'numeric',month:'short',year:'numeric'});};return `<div class="reservation-detail-top"><button type="button" id="reservation-lookup-back" class="reservation-detail-back">Back to lookup</button></div><div class="reservation-detail-layout"><article class="reservation-detail-main"><div class="reservation-detail-heading"><div><span class="reservation-reference-label">SAMPLE REFERENCE</span><h2>DEMO-ONLY</h2></div><span class="reservation-trip-badge">3-day trip example</span></div><div class="reservation-itinerary"><section><span class="reservation-itinerary-label">Pick-up</span><h3>${esc(date(7))}</h3><p>10:00 AM</p><strong>Airport Main Office</strong><p>102 Airport Road, Simpson Bay</p></section><section><span class="reservation-itinerary-label">Return</span><h3>${esc(date(10))}</h3><p>10:00 AM</p><strong>Airport Main Office</strong><p>102 Airport Road, Simpson Bay</p></section></div><div class="reservation-detail-section"><h3>Renter details</h3><dl><div><dt>Name</dt><dd>Alex Morgan (sample)</dd></div><div><dt>Email</dt><dd>alex.morgan@example.com</dd></div></dl></div><div class="reservation-detail-section"><h3>Trip extras</h3><p>No extras selected in this example.</p></div><div class="reservation-detail-section"><h3>Need to change or cancel?</h3><p>Contact the rental team for help with an existing booking.</p>${button('Contact us','contact.html','outline')}</div></article><aside class="reservation-detail-car"><span class="reservation-summary-heading">Your reserved vehicle</span><img src="${esc(v.cardImage||v.image)}" alt="${esc(name)}" width="600" height="350"><span class="reservation-detail-type">${esc(v.type)}</span><h2>${esc(name)}</h2><p>${v.numberOfPassengers} passengers · ${esc(v.transmission||'Transmission not specified')}</p><dl class="reservation-car-specs"><div><dt>Luggage</dt><dd>${v.amountOfLuggage} bags</dd></div><div><dt>Doors</dt><dd>${v.numberOfDoors}</dd></div></dl><div class="reservation-integration-note">This example shows how your reservation will appear. Real booking details and status will come from the company’s reservation system once connected.</div></aside></div>`;}
 function wireReservationLookup(){const lookup=$('.reservation-lookup'),detail=$('#reservation-detail-view'),form=$('#reservation-find-form'),status=$('#reservation-find-status');function showExample(){lookup.hidden=true;detail.innerHTML=reservationExample();detail.hidden=false;const heading=detail.querySelector('h2');heading.tabIndex=-1;heading.focus({preventScroll:true});detail.scrollIntoView({block:'start',behavior:'smooth'});}$('#reservation-example').addEventListener('click',showExample);form.addEventListener('submit',e=>{e.preventDefault();const reference=form.elements.confirmation.value.trim();if(!reference){form.elements.confirmation.setCustomValidity('Enter your confirmation number.');form.elements.confirmation.reportValidity();return;}if(reference.toUpperCase()==='DEMO-ONLY'){showExample();return;}status.hidden=false;status.textContent='Live reservation lookup is not connected yet. Your confirmation number has not been sent anywhere. You can view the example below or contact our team for help.';});form.elements.confirmation.addEventListener('input',()=>{form.elements.confirmation.setCustomValidity('');status.hidden=true;});detail.addEventListener('click',e=>{if(e.target.closest('#reservation-lookup-back')){detail.hidden=true;detail.innerHTML='';lookup.hidden=false;form.reset();status.hidden=true;form.elements.confirmation.focus({preventScroll:true});lookup.scrollIntoView({block:'start',behavior:'smooth'});}});}
 function wireHeroMotion(){
- const car=document.querySelector('.hero-vehicle'),stage=document.querySelector('.hero-stage');
- if(!car||!stage||typeof car.animate!=='function')return;
+ const car=document.querySelector('.hero-vehicle'),hero=document.querySelector('.hero');
+ if(!car||!hero)return;
  const enabled=matchMedia('(min-width:701px) and (prefers-reduced-motion:no-preference)');
- let animation=null,away=false,lastY=scrollY,frame=0,boundary=0,distance=0;
- function stop(){if(animation){animation.cancel();animation=null;}}
- function measure(){const rect=stage.getBoundingClientRect();boundary=Math.max(0,rect.top+scrollY+rect.height*.5-innerHeight*.58);distance=(innerWidth+car.offsetWidth)/2+80;}
- function reset(){stop();measure();lastY=scrollY;away=enabled.matches&&scrollY>boundary+40;car.style.transform=away?`translate3d(${distance}px,0,0)`:'';}
- function move(out){
-  away=out;stop();
-  const frames=out?[{transform:'translate3d(0,0,0)'},{transform:`translate3d(${-distance}px,0,0)`}]:[{transform:`translate3d(${distance}px,0,0)`},{transform:'translate3d(0,0,0)'}];
-  car.style.transform=out?`translate3d(${distance}px,0,0)`:'';
-  animation=car.animate(frames,{duration:out?650:850,easing:out?'cubic-bezier(.4,0,.8,.3)':'cubic-bezier(.16,1,.3,1)',fill:'none'});
-  const current=animation;current.finished.then(()=>{if(animation===current)animation=null;}).catch(()=>{});
+ let frame=0,end=1,distance=0,side=-1,fullyOutside=false;
+ function paint(){
+  frame=0;
+  if(!enabled.matches){car.style.transform='';side=-1;fullyOutside=false;return;}
+  const progress=Math.max(0,Math.min(1,scrollY/end));
+  if(progress===1){fullyOutside=true;}
+  else if(fullyOutside){side=1;fullyOutside=false;}
+  if(progress===0)side=-1;
+  car.style.transform=`translate3d(${(side*distance*progress).toFixed(2)}px,0,0)`;
  }
- function update(){frame=0;const y=scrollY;if(enabled.matches){if(y>lastY&&!away&&y>=boundary+40)move(true);else if(y<lastY&&away&&y<=Math.max(0,boundary-40))move(false);}lastY=y;}
- window.addEventListener('scroll',()=>{if(!frame)frame=requestAnimationFrame(update);},{passive:true});
- window.addEventListener('resize',reset);enabled.addEventListener('change',reset);
- reset();window.addEventListener('load',reset,{once:true});
+ function measure(){
+  const rect=hero.getBoundingClientRect(),header=document.querySelector('.site-header');
+  end=Math.max(1,rect.bottom+scrollY-(header?.offsetHeight||0));
+  distance=(innerWidth+car.offsetWidth)/2+80;
+  paint();
+ }
+ window.addEventListener('scroll',()=>{if(!frame)frame=requestAnimationFrame(paint);},{passive:true});
+ window.addEventListener('resize',measure);enabled.addEventListener('change',measure);
+ measure();window.addEventListener('load',measure,{once:true});
 }
+
 function wireLocationMenus(){
  document.querySelectorAll('#pickup-location,#return-location,#home-vehicle-category,#fleet-vehicle-category,#filter-passengers,#filter-transmission').forEach(select=>{
   const label=document.querySelector(`label[for="${select.id}"]`),wrap=document.createElement('div');wrap.className='location-select'+(['home-vehicle-category','fleet-vehicle-category'].includes(select.id)?' home-category-menu':'');select.before(wrap);wrap.append(select);
