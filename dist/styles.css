@@ -840,3 +840,14 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{padding:0}
  [data-scroll-reveal]:not([data-reveal-visible]){transition:none}
 }
 @media(max-width:700px) and (prefers-reduced-motion:no-preference){[data-scroll-reveal]{transition-duration:360ms}}
+
+/* Restore the car-card rise while keeping the observed card boundary stable. */
+@media(prefers-reduced-motion:no-preference){
+ .vehicle-card[data-scroll-reveal]>div{translate:0 20px;transition:translate 560ms cubic-bezier(.2,.7,.2,1) var(--reveal-delay,0ms)}
+ .vehicle-card[data-scroll-reveal][data-reveal-visible]>div,.vehicle-card[data-scroll-reveal]:focus-within>div{translate:0 0}
+ .vehicle-card[data-scroll-reveal]:not([data-reveal-visible])>div{transition:none}
+}
+@media(max-width:700px) and (prefers-reduced-motion:no-preference){
+ .vehicle-card[data-scroll-reveal]>div{translate:0 12px;transition-duration:380ms}
+ .vehicle-card[data-scroll-reveal][data-reveal-visible]>div,.vehicle-card[data-scroll-reveal]:focus-within>div{translate:0 0}
+}
