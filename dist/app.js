@@ -44,34 +44,32 @@ function openVehicle(id){if(D.fleet.some(v=>v.id===Number(id)))location.href='bo
 function reservationExample(){const v=D.fleet.find(v=>v.id===70)||D.fleet[0],name=v.brand+' '+v.model.trim();const date=offset=>{const day=new Date();day.setDate(day.getDate()+offset);return day.toLocaleDateString('en-US',{day:'numeric',month:'short',year:'numeric'});};return `<div class="reservation-detail-top"><button type="button" id="reservation-lookup-back" class="reservation-detail-back">Back to lookup</button></div><div class="reservation-detail-layout"><article class="reservation-detail-main"><div class="reservation-detail-heading"><div><span class="reservation-reference-label">SAMPLE REFERENCE</span><h2>DEMO-ONLY</h2></div><span class="reservation-trip-badge">3-day trip example</span></div><div class="reservation-itinerary"><section><span class="reservation-itinerary-label">Pick-up</span><h3>${esc(date(7))}</h3><p>10:00 AM</p><strong>Airport Main Office</strong><p>102 Airport Road, Simpson Bay</p></section><section><span class="reservation-itinerary-label">Return</span><h3>${esc(date(10))}</h3><p>10:00 AM</p><strong>Airport Main Office</strong><p>102 Airport Road, Simpson Bay</p></section></div><div class="reservation-detail-section"><h3>Renter details</h3><dl><div><dt>Name</dt><dd>Alex Morgan (sample)</dd></div><div><dt>Email</dt><dd>alex.morgan@example.com</dd></div></dl></div><div class="reservation-detail-section"><h3>Trip extras</h3><p>No extras selected in this example.</p></div><div class="reservation-detail-section"><h3>Need to change or cancel?</h3><p>Contact the rental team for help with an existing booking.</p>${button('Contact us','contact.html','outline')}</div></article><aside class="reservation-detail-car"><span class="reservation-summary-heading">Your reserved vehicle</span><img src="${esc(v.cardImage||v.image)}" alt="${esc(name)}" width="600" height="350"><span class="reservation-detail-type">${esc(v.type)}</span><h2>${esc(name)}</h2><p>${v.numberOfPassengers} passengers · ${esc(v.transmission||'Transmission not specified')}</p><dl class="reservation-car-specs"><div><dt>Luggage</dt><dd>${v.amountOfLuggage} bags</dd></div><div><dt>Doors</dt><dd>${v.numberOfDoors}</dd></div></dl><div class="reservation-integration-note">This example shows how your reservation will appear. Real booking details and status will come from the company’s reservation system once connected.</div></aside></div>`;}
 function wireReservationLookup(){const lookup=$('.reservation-lookup'),detail=$('#reservation-detail-view'),form=$('#reservation-find-form'),status=$('#reservation-find-status');function showExample(){lookup.hidden=true;detail.innerHTML=reservationExample();detail.hidden=false;const heading=detail.querySelector('h2');heading.tabIndex=-1;heading.focus({preventScroll:true});detail.scrollIntoView({block:'start',behavior:'smooth'});}$('#reservation-example').addEventListener('click',showExample);form.addEventListener('submit',e=>{e.preventDefault();const reference=form.elements.confirmation.value.trim();if(!reference){form.elements.confirmation.setCustomValidity('Enter your confirmation number.');form.elements.confirmation.reportValidity();return;}if(reference.toUpperCase()==='DEMO-ONLY'){showExample();return;}status.hidden=false;status.textContent='Live reservation lookup is not connected yet. Your confirmation number has not been sent anywhere. You can view the example below or contact our team for help.';});form.elements.confirmation.addEventListener('input',()=>{form.elements.confirmation.setCustomValidity('');status.hidden=true;});detail.addEventListener('click',e=>{if(e.target.closest('#reservation-lookup-back')){detail.hidden=true;detail.innerHTML='';lookup.hidden=false;form.reset();status.hidden=true;form.elements.confirmation.focus({preventScroll:true});lookup.scrollIntoView({block:'start',behavior:'smooth'});}});}
 let revealObserver=null;
-const revealedElements=new WeakSet(),activeReveals=new Set();
+const revealTargets=new Set();
 function wireScrollReveals(){
- if(typeof IntersectionObserver==='undefined'||typeof Element.prototype.animate!=='function')return;
- const reduced=matchMedia('(prefers-reduced-motion:reduce)');
+ if(typeof IntersectionObserver==='undefined')return;
  const selector='.hero-copy,.page-title,.section-head,.home-about-copy,.home-about-main-photo,.home-about-numbers,.benefits-heading,.benefit-card,.how-it-works-title,.journey-step,.home-locations-copy,.home-locations-visual,.booking-invite,.vehicle-card,.location-card,.person,.about-service-copy,.about-service-photos,.contact-details-panel,.contact-card,.reservation-lookup,.faq-item';
- function finish(){activeReveals.forEach(animation=>animation.finish());activeReveals.clear();}
  if(!revealObserver){
   revealObserver=new IntersectionObserver(entries=>{
    entries.forEach(({target,isIntersecting})=>{
-    if(!isIntersecting)return;
-    revealObserver.unobserve(target);
-    if(revealedElements.has(target))return;
-    revealedElements.add(target);
-    if(reduced.matches||target.contains(document.activeElement))return;
-    const compact=innerWidth<=700,group=target.parentElement;
-    const siblings=group?[...group.children].filter(el=>el.matches(selector)):[];
-    const delay=Math.min(Math.max(0,siblings.indexOf(target)),3)*(compact?40:60);
-    const animation=target.animate([{opacity:0,translate:`0 ${compact?12:20}px`},{opacity:1,translate:'0 0'}],{duration:compact?380:560,delay,easing:'cubic-bezier(.2,.7,.2,1)',fill:'backwards'});
-    activeReveals.add(animation);
-    animation.finished.then(()=>activeReveals.delete(animation)).catch(()=>activeReveals.delete(animation));
+    // Keep the element visible until it fully leaves the viewport; replay on return.
+    target.toggleAttribute('data-reveal-visible',isIntersecting||target.contains(document.activeElement));
    });
-  },{threshold:.06,rootMargin:'0px 0px -20px 0px'});
-  reduced.addEventListener('change',()=>{if(reduced.matches)finish();});
-  document.addEventListener('focusin',finish);
+  },{threshold:0});
+  document.addEventListener('focusin',event=>{
+   const target=event.target.closest('[data-scroll-reveal]');
+   if(target)target.setAttribute('data-reveal-visible','');
+  });
  }
- if(reduced.matches)return;
- document.querySelectorAll(selector).forEach(el=>{if(!revealedElements.has(el))revealObserver.observe(el);});
+ revealTargets.forEach(el=>{if(!el.isConnected){revealObserver.unobserve(el);revealTargets.delete(el);}});
+ document.querySelectorAll(selector).forEach(el=>{
+  if(revealTargets.has(el))return;
+  const siblings=el.parentElement?[...el.parentElement.children].filter(item=>item.matches(selector)):[];
+  el.style.setProperty('--reveal-delay',Math.min(Math.max(0,siblings.indexOf(el)),3)*40+'ms');
+  el.setAttribute('data-scroll-reveal','');
+  revealTargets.add(el);revealObserver.observe(el);
+ });
 }
+
 function wireHeroMotion(){
  const car=document.querySelector('.hero-vehicle'),hero=document.querySelector('.hero');
  if(!car||!hero)return;
